@@ -34,6 +34,40 @@
   --blur-hard: blur(80px);
 }
 
+@media (prefers-color-scheme: light) {
+  :root {
+    color-scheme: dark;
+    --bg-page: #0b1226;
+    --bg-hero-top: #1b3974;
+    --bg-hero-bottom: #0b1735;
+    --bg-panel: rgba(12, 24, 51, 0.92);
+    --bg-card: rgba(21, 35, 62, 0.96);
+    --bg-chip: rgba(29, 53, 97, 0.85);
+
+    --ink-strong: #f2f5ff;
+    --ink-muted: rgba(206, 220, 255, 0.75);
+    --ink-soft: rgba(206, 220, 255, 0.9);
+
+    --accent-gold: #f4d66e;
+    --accent-gold-dark: #b99232;
+    --accent-crimson: #e85f64;
+    --accent-emerald: #38cbae;
+    --accent-royal: #4d7fff;
+
+    --border-outer: rgba(244, 214, 110, 0.85);
+    --border-inner: rgba(43, 76, 135, 0.6);
+
+    --shadow-card: 0 20px 50px rgba(0, 0, 0, 0.45);
+    --shadow-panel: 0 30px 70px rgba(0, 0, 0, 0.5);
+
+    --glow-primary: rgba(77, 127, 255, 0.6);
+    --glow-secondary: rgba(244, 214, 110, 0.5);
+    --glow-accent: rgba(56, 203, 174, 0.4);
+    --blur-soft: blur(40px);
+    --blur-hard: blur(80px);
+  }
+}
+
 *,
 *::before,
 *::after {
