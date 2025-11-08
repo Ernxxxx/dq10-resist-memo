@@ -1,5 +1,5 @@
 :root {
-  color-scheme: dark light;
+  color-scheme: dark;
   --font-body: 'M PLUS Rounded 1c', 'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic', sans-serif;
   --font-heading: 'DotGothic16', 'M PLUS Rounded 1c', sans-serif;
 
@@ -32,31 +32,6 @@
   --glow-accent: rgba(56, 203, 174, 0.4);
   --blur-soft: blur(40px);
   --blur-hard: blur(80px);
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color-scheme: light dark;
-    --bg-page: #dbe7ff;
-    --bg-hero-top: #6790ff;
-    --bg-hero-bottom: #4765d7;
-    --bg-panel: rgba(246, 249, 255, 0.95);
-    --bg-card: rgba(240, 245, 255, 0.98);
-    --bg-chip: rgba(211, 223, 255, 0.85);
-
-    --ink-strong: #0b1232;
-    --ink-muted: rgba(27, 40, 87, 0.7);
-    --ink-soft: rgba(27, 40, 87, 0.88);
-
-    --accent-gold: #d59b25;
-    --accent-gold-dark: #a5741c;
-    --accent-crimson: #cf4e53;
-    --accent-emerald: #2a9f83;
-    --accent-royal: #3658c2;
-
-    --border-outer: rgba(202, 164, 70, 0.9);
-    --border-inner: rgba(66, 82, 150, 0.35);
-  }
 }
 
 *,
