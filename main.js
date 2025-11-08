@@ -2024,6 +2024,7 @@ const allCoinEntries = entriesByCategory.coin ?? [];
 const nonCoinEntries = Object.entries(entriesByCategory)
   .filter(([key]) => key !== 'coin')
   .flatMap(([, list]) => list);
+const allEndEntries = nonCoinEntries;
 const activeEntries = entriesByCategory[mode] ?? allCoinEntries;
 
 const state = {

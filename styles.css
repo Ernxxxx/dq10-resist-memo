@@ -1,5 +1,5 @@
 :root {
-  color-scheme: dark light;
+  color-scheme: dark;
   --font-body: 'M PLUS Rounded 1c', 'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic', sans-serif;
   --font-heading: 'DotGothic16', 'M PLUS Rounded 1c', sans-serif;
 
@@ -34,7 +34,8 @@
   --blur-hard: blur(80px);
 }
 
-@media (prefers-color-scheme: light) {
+/* ライトモード対応を無効化 - 常にダークモードで表示 */
+/* @media (prefers-color-scheme: light) {
   :root {
     color-scheme: light dark;
     --bg-page: #dbe7ff;
@@ -57,7 +58,7 @@
     --border-outer: rgba(202, 164, 70, 0.9);
     --border-inner: rgba(66, 82, 150, 0.35);
   }
-}
+} */
 
 *,
 *::before,
