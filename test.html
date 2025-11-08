@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Debug Test</title>
+</head>
+<body data-mode="coin">
+  <div id="cards"></div>
+  <div id="resistanceFilters"></div>
+
+  <script>
+    console.log("=== DEBUG START ===");
+    console.log("Body dataset.mode:", document.body.dataset.mode);
+    console.log("Cards element:", document.getElementById('cards'));
+    console.log("Filters element:", document.getElementById('resistanceFilters'));
+  </script>
+  <script defer src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DQ10 常闇の聖戦 耐性アトラス</title>
+  <meta name="description" content="常闇の竜レグナード・ダークキング・海冥主メイヴに挑むための耐性と構成メモ。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700&family=DotGothic16&family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="main.js"></script>
+</head>
+<body data-mode="tokoyami">
+  <header class="hero">
+    <nav class="page-switch" aria-label="ページ切替">
+      <a class="page-switch__link" href="index.html">コインボス</a>
+      <a class="page-switch__link" href="end.html">聖守護者</a>
+      <a class="page-switch__link" href="abyss.html">深淵の咎人</a>
+      <a class="page-switch__link" href="tokoyami.html" aria-current="page">常闇の聖戦</a>
+    </nav>
+    <div class="hero__content">
+      <div class="hero__topline">
+        <p class="hero__tag">DQ10 RESIST LIST</p>
+        <span class="hero__badge">Ver.7.1 reference</span>
+      </div>
+      <h1>常闇の聖戦 耐性アトラス</h1>
+      <p class="hero__lead">
+        レグナード・ダークキング・海冥主メイヴの必要耐性と構成メモを一か所にまとめました。
+        <strong>必須</strong>・<strong>推奨</strong>・<strong>あると安心</strong>で整理してあるので、常闇周回や初挑戦前のチェックにどうぞ。
+      </p>
+      <div class="hero__meta">
+        <span>最終更新: <time datetime="2024-11-17">2024/11/17</time></span>
+        <span>出典: <a href="https://xn--10-yg4a1a3kyh.jp/dq10_kyouteki3_2.html" target="_blank" rel="noopener noreferrer">ドラクエ10極限攻略</a></span>
+      </div>
+      <ul class="hero__stats">
+        <li>
+          <span class="hero__stats-value" id="coinCount">--</span>
+          <span class="hero__stats-label">コインボス</span>
+        </li>
+        <li>
+          <span class="hero__stats-value" id="endCount">--</span>
+          <span class="hero__stats-label">エンド / 高難度</span>
+        </li>
+        <li>
+          <span class="hero__stats-value" id="resistCount">--</span>
+          <span class="hero__stats-label">登録耐性</span>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="layout">
+    <aside class="panel" aria-label="フィルター">
+      <section class="panel__section">
+        <h2 class="panel__title">耐性から絞り込み</h2>
+        <p class="panel__hint">複数選択で「すべて満たす」ボスのみ表示されます。</p>
+        <div class="filter-group" id="resistanceFilters"></div>
+        <button type="button" class="panel__clear" id="clearResistances">選択をクリア</button>
+      </section>
+
+      <section class="panel__section">
+        <h2 class="panel__title">使い方メモ</h2>
+        <ul class="panel__notes">
+          <li>「必須」は事故率が高いため100%ガード推奨。</li>
+          <li>構成や最新バージョンで必要耐性が変わる場合があります。</li>
+          <li>おすすめ構成は攻略の虎掲載の想定を簡易掲載しています。</li>
+          <li>最新情報は公式おでかけ超便利ツールや攻略サイトも併用してください。</li>
+        </ul>
+      </section>
+    </aside>
+
+    <section class="content" aria-live="polite">
+      <div class="toolbar">
+        <div class="search">
+          <span class="search__icon" aria-hidden="true">🔍</span>
+          <input id="searchInput" type="search" placeholder="ボス名・耐性・キーワードで検索" aria-label="ボス名や耐性の検索">
+        </div>
+        <div class="legend" aria-label="優先度凡例">
+          <span class="legend__item legend__item--must">必須</span>
+          <span class="legend__item legend__item--recommended">推奨</span>
+          <span class="legend__item legend__item--nice">あると安心</span>
+        </div>
+      </div>
+
+      <div class="content__group">
+        <div class="content__header">
+          <div>
+            <h2>常闇の聖戦</h2>
+            <p class="content__subtitle">レグナード／ダークキング／メイヴの耐性早見表</p>
+          </div>
+          <span class="content__counter" id="visibleCount">- 件表示</span>
+        </div>
+        <div id="cards" class="cards"></div>
+        <p id="emptyState" class="empty" hidden>条件に合う常闇ボスが見つかりませんでした。</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>
+      非公式ファンメモです。コンテンツ追加やバランス調整で耐性が変わることがあります。
+      誤りを見つけた場合はご自身のメモに追記・修正してください。
+    </p>
+  </footer>
+</body>
+</html>
+<!-- Cache Buster: 1762604308 -->
