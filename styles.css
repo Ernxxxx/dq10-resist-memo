@@ -195,7 +195,7 @@ h1 {
 
 .hero__content {
   position: relative;
-  max-width: 1080px;
+  max-width: 1560px;
   color: rgba(248, 250, 255, 0.95);
 }
 
@@ -325,7 +325,7 @@ h1 {
   display: grid;
   grid-template-columns: minmax(0, 360px) minmax(0, 1fr);
   gap: clamp(1.8rem, 3vw, 2.8rem);
-  max-width: 1200px;
+  max-width: 1600px;
   margin: clamp(2.4rem, 5vw, 3.4rem) auto clamp(3.2rem, 6vw, 4.2rem);
   padding: 0 clamp(1.4rem, 3vw, 2.6rem);
   position: relative;
@@ -738,8 +738,14 @@ h1 {
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: clamp(1.4rem, 3vw, 2.4rem);
+}
+
+@media (max-width: 1280px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
 }
 
 @keyframes cardAppear {
@@ -1026,14 +1032,14 @@ h1 {
 }
 
 .footer {
-  max-width: 1160px;
+  max-width: 1560px;
   margin: 0 auto clamp(2.4rem, 5vw, 3.4rem);
   padding: 0 clamp(1.4rem, 3vw, 2.6rem);
   font-size: 0.85rem;
   color: rgba(210, 225, 255, 0.65);
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 1280px) {
   .layout {
     grid-template-columns: 1fr;
   }
@@ -1083,10 +1089,6 @@ h1 {
 
   .legend {
     justify-content: center;
-  }
-
-  .cards {
-    grid-template-columns: 1fr;
   }
 
   .filter-group-panels {
