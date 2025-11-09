@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>DQ10 聖守護者 耐性アトラス</title>
+  <title>DQ10 聖守護者 耐性メモ</title>
   <meta name="description" content="聖守護者の闘戦記に挑むための耐性・構成・参照リンクをまとめたメモ。">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,24 +14,27 @@
 <body data-mode="saint">
   <header class="hero">
     <nav class="page-switch" aria-label="ページ切替">
-      <a class="page-switch__link" href="index.html">コインボス</a>
-      <a class="page-switch__link" href="end.html" aria-current="page">聖守護者</a>
-      <a class="page-switch__link" href="abyss.html">深淵の咎人</a>
-      <a class="page-switch__link" href="tokoyami.html">常闇の聖戦</a>
+      <span class="page-switch__label">MENU</span>
+      <ul class="page-switch__list">
+        <li><a class="page-switch__link" href="index.html">コインボス</a></li>
+        <li><a class="page-switch__link" href="end.html" aria-current="page">聖守護者</a></li>
+        <li><a class="page-switch__link" href="abyss.html">深淵の咎人</a></li>
+        <li><a class="page-switch__link" href="tokoyami.html">常闇の聖戦</a></li>
+      </ul>
     </nav>
     <div class="hero__content">
       <div class="hero__topline">
         <p class="hero__tag">DQ10 RESIST LIST</p>
-        <span class="hero__badge">Ver.7.1 reference</span>
+        <span class="hero__badge">Ver.7.5 reference</span>
       </div>
-      <h1>聖守護者 耐性アトラス</h1>
+      <h1>聖守護者 耐性メモ</h1>
       <p class="hero__lead">
         聖守護者の闘戦記に挑むための耐性・構成・参照リンクをまとめました。
         <strong>必須</strong>・<strong>推奨</strong>・<strong>あると安心</strong>の優先度で整理しているので、準備チェックに使ってください。
       </p>
       <div class="hero__meta">
         <span>最終更新: <time datetime="2024-11-17">2024/11/17</time></span>
-        <span>出典: <a href="https://xn--10-yg4a1a3kyh.jp/dq10_tousenki.html" target="_blank" rel="noopener noreferrer">ドラクエ10極限攻略</a></span>
+        <span>出典: <a href="https://xn--10-yg4a1a3kyh.jp/dq10_tousenki.html" target="_blank" rel="noopener noreferrer">ドラクエ10極限攻略</a> / <a href="https://dragon-quest.jp/ten/monster/formidable/" target="_blank" rel="noopener noreferrer">DQX 攻略の虎</a></span>
       </div>
       <ul class="hero__stats">
         <li>
@@ -57,6 +60,13 @@
         <p class="panel__hint">複数選択で「すべて満たす」ボスのみ表示されます。</p>
         <div class="filter-group" id="resistanceFilters"></div>
         <button type="button" class="panel__clear" id="clearResistances">選択をクリア</button>
+      </section>
+
+      <section class="panel__section">
+        <h2 class="panel__title">職業から絞り込み</h2>
+        <p class="panel__hint">おすすめ構成に載っている職業でさらに絞り込めます。</p>
+        <div class="job-filters" id="jobFilters" aria-label="職業フィルター"></div>
+        <button type="button" class="panel__clear" id="clearJobs">職業の選択をクリア</button>
       </section>
 
       <section class="panel__section">

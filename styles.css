@@ -171,8 +171,7 @@ h1 {
   padding: clamp(3.8rem, 7vw, 5.4rem) clamp(1.8rem, 4vw, 3.8rem);
   background: linear-gradient(180deg, var(--bg-hero-top) 0%, var(--bg-hero-bottom) 80%);
   position: relative;
-  overflow: hidden;
-  z-index: 1;
+  overflow: visible;
 }
 
 .hero::before,
@@ -220,39 +219,63 @@ h1 {
 }
 
 .page-switch {
-  position: absolute;
-  top: clamp(0.8rem, 3vw, 1.8rem);
-  right: clamp(1rem, 4vw, 2.8rem);
+  position: fixed;
+  top: clamp(0.6rem, 2vw, 1.2rem);
+  right: clamp(0.8rem, 3vw, 2rem);
   display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.55rem 1rem;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(8, 12, 28, 0.85);
   flex-wrap: wrap;
-  gap: 0.4rem;
-  padding: 0.3rem;
-  border-radius: 999px;
-  background: rgba(6, 12, 28, 0.65);
-  border: 1px solid rgba(255, 255, 255, 0.35);
-  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.4);
-  z-index: 1;
+  z-index: 999;
+  backdrop-filter: blur(14px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+}
+
+.page-switch__label {
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  color: rgba(210, 225, 255, 0.75);
+}
+
+.page-switch__list {
+  list-style: none;
+  display: flex;
+  gap: 0.3rem;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.page-switch__list li {
+  margin: 0;
 }
 
 .page-switch__link {
-  padding: 0.4rem 1.25rem;
-  border-radius: 999px;
-  font-size: 0.8rem;
+  display: block;
+  padding: 0.35rem 0.95rem;
+  border-radius: 12px;
+  font-size: 0.82rem;
   font-weight: 600;
-  letter-spacing: 0.06em;
-  color: rgba(230, 238, 255, 0.85);
-  transition: color 0.15s ease, background 0.15s ease, transform 0.15s ease;
+  letter-spacing: 0.04em;
+  color: rgba(230, 238, 255, 0.8);
+  border: 1px solid transparent;
+  transition: color 0.2s ease, background 0.2s ease, border-color 0.2s ease;
 }
 
 .page-switch__link:hover {
   color: #fff;
-  background: rgba(23, 45, 92, 0.6);
+  border-color: rgba(73, 128, 255, 0.5);
+  background: rgba(28, 46, 92, 0.5);
 }
 
 .page-switch__link[aria-current="page"] {
-  background: linear-gradient(120deg, rgba(73, 128, 255, 0.95), rgba(56, 203, 174, 0.95));
-  color: #051028;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 8px 18px rgba(14, 22, 40, 0.45);
+  border-color: rgba(73, 128, 255, 0.6);
+  color: #fff;
+  background: rgba(50, 90, 180, 0.35);
 }
 
 .hero h1 {
@@ -407,6 +430,22 @@ h1 {
 #resistanceFilters {
   display: grid;
   gap: 0.85rem;
+}
+
+.job-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  max-height: 160px;
+  overflow-y: auto;
+  padding-right: 0.25rem;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(77, 127, 255, 0.5) rgba(10, 18, 36, 0.3);
+}
+
+.job-filters .filter-chip {
+  font-size: 0.75rem;
+  white-space: nowrap;
 }
 
 .filter-groups-nav {
@@ -833,6 +872,29 @@ h1 {
   gap: 0.55rem;
 }
 
+.card__image {
+  margin: 0.2rem 0 0;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.card__image img {
+  width: 100%;
+  display: block;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  filter: saturate(1.05) contrast(1.02);
+  border-radius: inherit;
+}
+
+.card__image--shift-down img {
+  object-position: center 55%;
+}
+
+.card__image--shift-up img {
+  object-position: center 25%;
+}
+
 .meta-chip {
   display: inline-flex;
   align-items: center;
@@ -849,6 +911,7 @@ h1 {
 .card__summary {
   font-size: 0.9rem;
   color: var(--ink-muted);
+  margin: 0.35rem 0 0;
 }
 
 .card__jobs {
@@ -1055,18 +1118,23 @@ h1 {
   }
 
   .page-switch {
-    position: static;
-    margin-bottom: 1.2rem;
+    top: 0.4rem;
+    left: 0.6rem;
+    right: 0.6rem;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .page-switch__label {
+    width: 100%;
+  }
+
+  .page-switch__list {
     justify-content: center;
   }
 
   .page-switch__link {
-    padding: 0.6rem 1.1rem;
-    font-size: 0.85rem;
-    min-height: 44px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 0.5rem 1rem;
   }
 
   .hero__stats {

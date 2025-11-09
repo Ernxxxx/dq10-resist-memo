@@ -30,7 +30,121 @@ const priorityLabels = {
   nice: 'あると安心'
 };
 
-const entries = [
+const jobDefinitions = [
+  { label: '戦士', keywords: ['戦士', '戦'] },
+  { label: '僧侶', keywords: ['僧侶', '僧'] },
+  { label: '賢者', keywords: ['賢者', '賢'] },
+  { label: '旅芸人', keywords: ['旅芸人', '旅芸', '旅'] },
+  { label: '魔法使い', keywords: ['魔法使い', '魔使', '魔法', '魔'] },
+  { label: '武闘家', keywords: ['武闘家', '武闘', '武'] },
+  { label: '盗賊', keywords: ['盗賊'] },
+  { label: 'バトルマスター', keywords: ['バトルマスター', 'バトマス', 'バト'] },
+  { label: 'パラディン', keywords: ['パラディン', 'パラ', 'ヤリパラ'] },
+  { label: '魔法戦士', keywords: ['魔法戦士', '魔戦'] },
+  { label: 'レンジャー', keywords: ['レンジャー', 'レン'] },
+  { label: 'まもの使い', keywords: ['まもの使い', 'まも'] },
+  { label: 'どうぐ使い', keywords: ['どうぐ使い', 'どうぐ', 'どう', '道具', '道'] },
+  { label: '踊り子', keywords: ['踊り子', '踊'] },
+  { label: '占い師', keywords: ['占い師', '占い', '占'] },
+  { label: '天地雷鳴士', keywords: ['天地雷鳴士', '天地'] },
+  { label: 'ガーディアン', keywords: ['ガーディアン', 'ガデ'] },
+  { label: '魔剣士', keywords: ['魔剣士', '魔剣'] },
+  { label: '海賊', keywords: ['海賊'] },
+  { label: '竜術士', keywords: ['竜術士', '竜術'] },
+  { label: '隠者', keywords: ['隠者'] }
+];
+
+const jobKeywordMap = new Map();
+jobDefinitions.forEach((job) => {
+  job.keywords.forEach((keyword) => {
+    jobKeywordMap.set(keyword, job.label);
+  });
+});
+const jobKeywordsByLength = Array.from(jobKeywordMap.keys()).sort((a, b) => b.length - a.length);
+
+const bossImageExtensions = ['webp', 'png', 'jpg', 'jpeg'];
+const buildImageCandidates = (key) => bossImageExtensions.map((ext) => `assets/bosses/${key}.${ext}`);
+const imageShiftDownNames = new Set([
+  '人食い火竜',
+  '結界の守護者たち',
+  'アンドレアル',
+  'ムドー',
+  '帝国三将軍',
+  'ゲルニック将軍',
+  'Sキラーマシン',
+  'ドン・モグーラ',
+  'キラーマジンガ',
+  'キラーマジンガ強',
+  'グラコス',
+  'グラコス強',
+  'キングヒドラ強',
+  'バラモス強',
+  'ドラゴンガイア強',
+  '悪霊の神々強',
+  'ベリアル強',
+  'バズズ強',
+  '剣王ガルドリオン'
+]);
+
+const imageShiftUpNames = new Set([
+  'アトラス',
+  'アトラス強',
+  'タロット魔人',
+  'タロット魔人強',
+  '幻界の四諸侯',
+  '幻界の四諸侯強'
+]);
+
+const sanitizeJobSourceText = (text = '') =>
+  text
+    .replace(/（[^）]*）/g, ' ')
+    .replace(/\([^)]*\)/g, ' ')
+    .replace(/[【】「」『』《》〈〉［］\[\]{}]/g, ' ')
+    .replace(/サポ討伐：/g, ' ')
+    .replace(/[+＋&＆・·•,、，:：;]/g, ' ')
+    .replace(/[\\/|｜]/g, ' ')
+    .replace(/または/g, ' ')
+    .replace(/or/gi, ' ')
+    .replace(/×\d+/g, ' ')
+    .replace(/\d+/g, ' ')
+    .replace(/[%％@＠]/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+
+const extractJobsFromRecommended = (recommendedList = []) => {
+  const jobs = new Set();
+  recommendedList.forEach((combo) => {
+    const sanitized = sanitizeJobSourceText(combo);
+    if (!sanitized) return;
+    let idx = 0;
+    while (idx < sanitized.length) {
+      const char = sanitized[idx];
+      if (/\s/.test(char)) {
+        idx += 1;
+        continue;
+      }
+      let matchedKeyword = null;
+      for (const keyword of jobKeywordsByLength) {
+        if (sanitized.startsWith(keyword, idx)) {
+          matchedKeyword = keyword;
+          break;
+        }
+      }
+      if (matchedKeyword) {
+        const jobLabel = jobKeywordMap.get(matchedKeyword);
+        if (jobLabel) {
+          jobs.add(jobLabel);
+        }
+        idx += matchedKeyword.length;
+      } else {
+        idx += 1;
+      }
+    }
+  });
+  return Array.from(jobs).sort((a, b) => a.localeCompare(b, 'ja'));
+};
+
+const rawEntries = [
   {
     slug: 'boss-108',
     name: 'デスマシーン',
@@ -1558,6 +1672,8 @@ const entries = [
   }
 ];
 
+const entries = rawEntries.filter((entry) => !entry.name.startsWith('プチ'));
+
 const rewardDetailsByName = {
   'おうじょのあい': {
     url: 'https://xn--10-yg4a1a3kyh.jp/a_acc/dq10_acc_k_ojonoai.html',
@@ -1996,6 +2112,7 @@ const cleanRecommendedText = (text) =>
 entries.forEach((entry) => {
   const raw = recommendedByName[entry.name];
   entry.recommended = raw ? raw.map((item) => cleanRecommendedText(item)) : [];
+  entry.jobTags = extractJobsFromRecommended(entry.recommended);
   const rewardNames = rewardsByBossName[entry.name];
   entry.rewards = rewardNames
     ? rewardNames.map((rewardName) => {
@@ -2008,6 +2125,8 @@ entries.forEach((entry) => {
         };
       })
     : [];
+  const imageKey = entry.imageKey ?? entry.slug ?? null;
+  entry.imageCandidates = imageKey ? buildImageCandidates(imageKey) : [];
 });
 
 const entriesByCategory = entries.reduce((acc, entry) => {
@@ -2030,6 +2149,7 @@ const activeEntries = entriesByCategory[mode] ?? allCoinEntries;
 const state = {
   search: '',
   resistances: new Set(),
+  jobs: new Set(),
   activeFilterGroup: ''
 };
 
@@ -2187,6 +2307,47 @@ const clearResistanceSelections = () => {
   render();
 };
 
+const buildJobFilters = () => {
+  if (!elements.jobFilters) return;
+
+  const jobs = new Set(activeEntries.flatMap((entry) => entry.jobTags ?? []));
+  const sorted = Array.from(jobs).sort((a, b) => a.localeCompare(b, 'ja'));
+
+  if (sorted.length === 0) {
+    elements.jobFilters.textContent = 'おすすめ構成の職業データがありません。';
+    if (elements.clearJobs) {
+      elements.clearJobs.disabled = true;
+    }
+    return;
+  }
+
+  const fragment = document.createDocumentFragment();
+  sorted.forEach((job) => {
+    const chip = document.createElement('button');
+    chip.type = 'button';
+    chip.className = 'filter-chip';
+    chip.textContent = job;
+    chip.dataset.job = job;
+    chip.dataset.active = state.jobs.has(job) ? 'true' : 'false';
+    fragment.appendChild(chip);
+  });
+
+  elements.jobFilters.replaceChildren(fragment);
+  if (elements.clearJobs) {
+    elements.clearJobs.disabled = false;
+  }
+};
+
+const clearJobSelections = () => {
+  if (!elements.jobFilters) return;
+
+  state.jobs.clear();
+  elements.jobFilters.querySelectorAll('.filter-chip[data-active="true"]').forEach((chip) => {
+    chip.dataset.active = 'false';
+  });
+  render();
+};
+
 const filterEntries = () => {
   const keyword = state.search.trim().toLowerCase();
   return activeEntries.filter((entry) => {
@@ -2194,6 +2355,15 @@ const filterEntries = () => {
       const entryResLabels = entry.resistances.map((r) => r.label);
       for (const label of state.resistances) {
         if (!entryResLabels.includes(label)) {
+          return false;
+        }
+      }
+    }
+
+    if (state.jobs.size > 0) {
+      const entryJobs = entry.jobTags ?? [];
+      for (const job of state.jobs) {
+        if (!entryJobs.includes(job)) {
           return false;
         }
       }
@@ -2218,6 +2388,46 @@ const filterEntries = () => {
 
     return true;
   });
+};
+
+const createBossImage = (entry) => {
+  if (!entry.imageCandidates || entry.imageCandidates.length === 0) return null;
+
+  const wrapper = document.createElement('div');
+  wrapper.className = 'card__image';
+  if (imageShiftDownNames.has(entry.name)) {
+    wrapper.classList.add('card__image--shift-down');
+  }
+  if (imageShiftUpNames.has(entry.name)) {
+    wrapper.classList.add('card__image--shift-up');
+  }
+  wrapper.dataset.loaded = 'false';
+
+  const img = document.createElement('img');
+  img.loading = 'lazy';
+  img.decoding = 'async';
+  img.alt = `${entry.name}の画像`;
+
+  let attemptIndex = 0;
+  const tryNextSource = () => {
+    if (attemptIndex >= entry.imageCandidates.length) {
+      wrapper.remove();
+      return;
+    }
+    img.src = entry.imageCandidates[attemptIndex++];
+  };
+
+  img.addEventListener('load', () => {
+    wrapper.dataset.loaded = 'true';
+  });
+
+  img.addEventListener('error', () => {
+    tryNextSource();
+  });
+
+  tryNextSource();
+  wrapper.appendChild(img);
+  return wrapper;
 };
 
 const createCard = (entry, index) => {
@@ -2267,6 +2477,8 @@ const createCard = (entry, index) => {
   if (meta.childElementCount > 0) {
     header.appendChild(meta);
   }
+
+  const bossImage = createBossImage(entry);
 
   const summary = document.createElement('p');
   summary.className = 'card__summary';
@@ -2387,6 +2599,9 @@ const createCard = (entry, index) => {
   notes.appendChild(list);
 
   card.appendChild(header);
+  if (bossImage) {
+    card.appendChild(bossImage);
+  }
   card.appendChild(summary);
   fragments.forEach((fragment) => card.appendChild(fragment));
   card.appendChild(notes);
@@ -2443,6 +2658,27 @@ const bindEvents = () => {
   if (elements.clearResistances) {
     elements.clearResistances.addEventListener('click', clearResistanceSelections);
   }
+
+  if (elements.jobFilters) {
+    elements.jobFilters.addEventListener('click', (event) => {
+      const chip = event.target.closest('.filter-chip');
+      if (!chip || !chip.dataset.job) return;
+      const job = chip.dataset.job;
+      const isActive = chip.dataset.active === 'true';
+      if (isActive) {
+        chip.dataset.active = 'false';
+        state.jobs.delete(job);
+      } else {
+        chip.dataset.active = 'true';
+        state.jobs.add(job);
+      }
+      render();
+    });
+  }
+
+  if (elements.clearJobs) {
+    elements.clearJobs.addEventListener('click', clearJobSelections);
+  }
 };
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -2456,10 +2692,13 @@ document.addEventListener('DOMContentLoaded', () => {
     heroResistCount: document.getElementById('resistCount'),
     searchInput: document.getElementById('searchInput'),
     resistanceFilters: document.getElementById('resistanceFilters'),
-    clearResistances: document.getElementById('clearResistances')
+    clearResistances: document.getElementById('clearResistances'),
+    jobFilters: document.getElementById('jobFilters'),
+    clearJobs: document.getElementById('clearJobs')
   };
 
   buildResistanceFilters();
+  buildJobFilters();
   updateHeroStats();
   bindEvents();
   render();

@@ -14,17 +14,20 @@
 <body data-mode="coin">
   <header class="hero">
     <nav class="page-switch" aria-label="ページ切替">
-      <a class="page-switch__link" href="index.html" aria-current="page">コインボス</a>
-      <a class="page-switch__link" href="end.html">聖守護者</a>
-      <a class="page-switch__link" href="abyss.html">深淵の咎人</a>
-      <a class="page-switch__link" href="tokoyami.html">常闇の聖戦</a>
+      <span class="page-switch__label">MENU</span>
+      <ul class="page-switch__list">
+        <li><a class="page-switch__link" href="index.html" aria-current="page">コインボス</a></li>
+        <li><a class="page-switch__link" href="end.html">聖守護者</a></li>
+        <li><a class="page-switch__link" href="abyss.html">深淵の咎人</a></li>
+        <li><a class="page-switch__link" href="tokoyami.html">常闇の聖戦</a></li>
+      </ul>
     </nav>
     <div class="hero__content">
       <div class="hero__topline">
         <p class="hero__tag">DQ10 RESIST LIST</p>
-        <span class="hero__badge">Ver.7.1 reference</span>
+        <span class="hero__badge">Ver.7.5 reference</span>
       </div>
-      <h1>コインボス耐性アトラス</h1>
+      <h1>コインボス耐性メモ</h1>
       <p class="hero__lead">
         ドラクエXのコインボス耐性を網羅。極限攻略と攻略の虎をベースに、
         <strong>必須</strong>・<strong>推奨</strong>・<strong>あると安心</strong>の三段階で瞬時に確認できます。
@@ -58,6 +61,13 @@
         <p class="panel__hint">複数選択で「すべて満たす」ボスのみ表示されます。</p>
         <div class="filter-group" id="resistanceFilters"></div>
         <button type="button" class="panel__clear" id="clearResistances">選択をクリア</button>
+      </section>
+
+      <section class="panel__section">
+        <h2 class="panel__title">職業から絞り込み</h2>
+        <p class="panel__hint">おすすめ構成に載っている職業でさらに絞り込めます。</p>
+        <div class="job-filters" id="jobFilters" aria-label="職業フィルター"></div>
+        <button type="button" class="panel__clear" id="clearJobs">職業の選択をクリア</button>
       </section>
 
       <section class="panel__section">
