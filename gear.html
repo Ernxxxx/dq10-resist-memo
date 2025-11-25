@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>耐性装備メモ | DQ10</title>
+  <meta name="description" content="自分の持っている耐性装備を登録して、いつでも検索できる個人用メモ。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700&family=DotGothic16&family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=4">
+  <script src="assets/gear-catalog.js"></script>
+  <script defer src="gear.js"></script>
+</head>
+<body data-mode="gear">
+  <header class="hero">
+    <nav class="page-switch" aria-label="ページ切替">
+      <span class="page-switch__label">MENU</span>
+      <ul class="page-switch__list">
+        <li><a class="page-switch__link" href="index.html">コインボス</a></li>
+        <li><a class="page-switch__link" href="end.html">聖守護者</a></li>
+        <li><a class="page-switch__link" href="abyss.html">深淵の咎人</a></li>
+        <li><a class="page-switch__link" href="tokoyami.html">常闇の聖戦</a></li>
+        <li><a class="page-switch__link" href="gear.html" aria-current="page">耐性装備メモ</a></li>
+      </ul>
+    </nav>
+    <div class="hero__content">
+      <div class="hero__topline">
+        <p class="hero__tag">PERSONAL RESIST MEMO</p>
+        <span class="hero__badge">Local storage only</span>
+      </div>
+      <h1>耐性装備メモ</h1>
+      <p class="hero__lead">
+        自分が持っている耐性装備を登録しておき、キーワード検索ですぐに呼び出せます。
+        聖守護者や最新ボス用の装備構成を忘れないための個人用メモです。
+      </p>
+      <div class="hero__meta">
+        <span>ブラウザにのみ保存されます（自動保存）</span>
+        <span>手持ちリストを更新すると即座に反映されます</span>
+      </div>
+      <ul class="hero__stats">
+        <li>
+          <span class="hero__stats-value" id="ownedCount">--</span>
+          <span class="hero__stats-label">登録装備</span>
+        </li>
+        <li>
+          <span class="hero__stats-value" id="trackedResistCount">--</span>
+          <span class="hero__stats-label">カバー耐性</span>
+        </li>
+        <li>
+          <span class="hero__stats-value" id="updatedAtLabel">--</span>
+          <span class="hero__stats-label">最終更新</span>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="layout layout--gear">
+    <section class="panel gear-panel" aria-label="装備登録">
+      <div class="panel__section">
+        <h2 class="panel__title" id="gearFormTitle">耐性装備を登録</h2>
+        <p class="panel__hint">ボス別メモと同じ耐性カテゴリから選択できます。名前だけでもOK。</p>
+      </div>
+      <form id="gearForm" class="gear-form">
+        <div class="gear-form__grid">
+          <div class="gear-form__block">
+            <label class="gear-field">
+              <span>部位 <span class="gear-required">必須</span></span>
+              <select id="gearSlotSelect" name="gearSlotSelect" required>
+                <option value="" disabled selected>部位を選択</option>
+                <option value="あたま">あたま</option>
+                <option value="からだ上">からだ上</option>
+                <option value="からだ下">からだ下</option>
+                <option value="ローブ（上下一体）">ローブ（上下一体）</option>
+                <option value="うで">うで</option>
+                <option value="足">足</option>
+                <option value="指">指</option>
+                <option value="首">首</option>
+                <option value="顔アクセ">顔アクセ</option>
+                <option value="腰アクセ / ベルト">腰アクセ / ベルト</option>
+                <option value="盾">盾</option>
+                <option value="大盾">大盾</option>
+                <option value="武器">武器</option>
+                <option value="その他・特殊">その他・特殊</option>
+                <option value="custom">カスタム入力</option>
+              </select>
+            </label>
+            <label class="gear-field" id="gearSlotCustomWrapper" hidden>
+              <span>カスタム部位 <span class="gear-required gear-required--optional">任意</span></span>
+              <input id="gearSlotCustom" type="text" placeholder="例) ついてくん / からだ下追加など">
+              <small class="gear-field__hint">選択肢にない部位を登録したい時だけ入力してください。</small>
+            </label>
+            <label class="gear-field">
+              <span>職業フィルター <span class="gear-required gear-required--optional">任意</span></span>
+              <select id="gearJobSelect" aria-label="装備カタログの職業フィルター">
+                <option value="" selected>職業を選択</option>
+                <option value="戦士">戦士</option>
+                <option value="僧侶">僧侶</option>
+                <option value="魔法使い">魔法使い</option>
+                <option value="武闘家">武闘家</option>
+                <option value="盗賊">盗賊</option>
+                <option value="旅芸人">旅芸人</option>
+                <option value="バトルマスター">バトルマスター</option>
+                <option value="パラディン">パラディン</option>
+                <option value="魔法戦士">魔法戦士</option>
+                <option value="レンジャー">レンジャー</option>
+                <option value="賢者">賢者</option>
+                <option value="スーパースター">スーパースター</option>
+                <option value="まもの使い">まもの使い</option>
+                <option value="どうぐ使い">どうぐ使い</option>
+                <option value="踊り子">踊り子</option>
+                <option value="占い師">占い師</option>
+                <option value="天地雷鳴士">天地雷鳴士</option>
+                <option value="遊び人">遊び人</option>
+                <option value="デスマスター">デスマスター</option>
+                <option value="魔剣士">魔剣士</option>
+                <option value="ガーディアン">ガーディアン</option>
+                <option value="海賊">海賊</option>
+                <option value="竜術士">竜術士</option>
+                <option value="隠者">隠者</option>
+              </select>
+              <small class="gear-field__hint">選択した職業に対応する装備候補のみ表示されます。</small>
+            </label>
+            <label class="gear-field gear-field--name">
+              <span>装備名 <span class="gear-required">必須</span></span>
+              <input id="gearName" name="gearName" type="text" placeholder="例) 魔侯爵のよろい上" list="gearNameOptions" required disabled>
+              <small class="gear-field__hint">部位を選択後、入力またはカタログから装備名を選択できます。</small>
+            </label>
+          </div>
+          <div class="gear-form__block gear-form__block--catalog">
+            <h3 class="gear-catalog__title">カタログから補完</h3>
+            <p class="gear-catalog__hint">部位と職業を選ぶだけで候補が絞られ、装備名へ即反映されます。</p>
+            <section class="gear-catalog" aria-label="装備名カタログ">
+          <label class="gear-field">
+            <span>装備候補を選ぶ</span>
+            <select id="gearCatalogSelect" size="8" aria-label="装備候補一覧" disabled>
+              <option value="">部位を選択すると候補が表示されます。</option>
+            </select>
+          </label>
+              <p id="gearCatalogEmpty" class="gear-catalog__empty" hidden>部位を選択すると候補が表示されます。</p>
+              <p class="gear-catalog__note">候補を選ぶだけで装備名欄へ自動入力されます。</p>
+            </section>
+          </div>
+        </div>
+        <datalist id="gearNameOptions"></datalist>
+        <label class="gear-field gear-field--textarea">
+          <span>ひとことメモ</span>
+          <textarea id="gearNote" name="gearNote" rows="3" placeholder="使用するボス、必要錬金など自由にメモできます。"></textarea>
+        </label>
+        <div class="gear-field">
+          <div class="gear-field__header">
+            <span>付与耐性</span>
+            <button type="button" class="gear-inline-btn" id="gearClearResists">登録をクリア</button>
+          </div>
+          <div class="gear-resist-manager">
+            <div class="gear-resist-add">
+              <label class="gear-resist-select">
+                <span class="gear-resist-label">耐性</span>
+                <select id="gearResistSelect" aria-label="登録する耐性"></select>
+              </label>
+              <label class="gear-resist-value">
+                <span class="gear-resist-label">割合</span>
+                <div class="gear-resist-value__input">
+                  <input id="gearResistValue" type="number" min="0" max="200" step="5" placeholder="60">
+                  <span>%</span>
+                </div>
+              </label>
+              <button type="button" class="gear-inline-btn gear-resist-add__btn" id="gearAddResist">追加</button>
+            </div>
+            <div id="gearResistEntries" class="gear-resist-entries" aria-live="polite"></div>
+            <div class="gear-resist-summary-wrapper">
+              <span class="gear-resist-summary__label">合計耐性</span>
+              <div id="gearResistSummary" class="gear-resist-summary"></div>
+            </div>
+            <p class="gear-resist-note">同じ耐性を複数登録すると自動的に合算され、表示は最大100%までになります。</p>
+          </div>
+        </div>
+        <div class="gear-form__actions">
+          <button type="submit" class="gear-submit" id="gearSubmit">保存する</button>
+          <button type="button" class="gear-reset" id="gearReset">入力をリセット</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="content gear-content" aria-live="polite">
+      <div class="toolbar gear-toolbar">
+        <div class="search">
+          <span class="search__icon" aria-hidden="true">🔍</span>
+          <input id="gearSearch" type="search" placeholder="装備名・耐性・メモで検索" aria-label="耐性装備の検索">
+        </div>
+        <div class="gear-toolbar__filters">
+          <label class="gear-filter gear-filter--chips">
+            <span class="gear-filter__label">耐性で絞り込み</span>
+            <div id="gearResistFilterChips" class="gear-filter-chips" role="group" aria-label="耐性で絞り込み"></div>
+          </label>
+          <label class="gear-filter">
+            <span class="gear-filter__label">職業で絞り込み</span>
+            <select id="gearJobFilter"></select>
+          </label>
+        </div>
+        <button type="button" class="gear-inline-btn gear-toolbar__clear" id="gearClearSearch">検索をクリア</button>
+        <span class="content__counter" id="gearVisibleCount">0件</span>
+      </div>
+      <nav class="gear-tabs" id="gearTabs" aria-label="部位フィルター">
+        <button type="button" class="gear-tabs__btn" data-slot-filter="all" aria-current="true">ALL</button>
+        <button type="button" class="gear-tabs__btn" data-slot-filter="あたま">あたま</button>
+        <button type="button" class="gear-tabs__btn" data-slot-filter="からだ上">からだ上</button>
+        <button type="button" class="gear-tabs__btn" data-slot-filter="からだ下">からだ下</button>
+        <button type="button" class="gear-tabs__btn" data-slot-filter="ローブ（上下一体）">ローブ</button>
+        <button type="button" class="gear-tabs__btn" data-slot-filter="うで">うで</button>
+        <button type="button" class="gear-tabs__btn" data-slot-filter="足">足</button>
+        <button type="button" class="gear-tabs__btn" data-slot-filter="指">指</button>
+        <button type="button" class="gear-tabs__btn" data-slot-filter="首">首</button>
+        <button type="button" class="gear-tabs__btn" data-slot-filter="顔アクセ">顔アクセ</button>
+        <button type="button" class="gear-tabs__btn" data-slot-filter="腰アクセ / ベルト">腰アクセ</button>
+        <button type="button" class="gear-tabs__btn" data-slot-filter="盾">盾</button>
+        <button type="button" class="gear-tabs__btn" data-slot-filter="大盾">大盾</button>
+        <button type="button" class="gear-tabs__btn" data-slot-filter="武器">武器</button>
+        <button type="button" class="gear-tabs__btn" data-slot-filter="その他">その他</button>
+      </nav>
+      <div id="gearList" class="gear-cards"></div>
+      <p id="gearEmptyState" class="empty" hidden>まだ登録がありません。左のフォームから装備を追加してください。</p>
+      <section class="gear-loadout">
+        <div class="gear-loadout__header">
+          <div>
+            <h3>耐性セット計算</h3>
+            <p class="gear-loadout__hint">各カードの「セット」チェックを入れると、ここに合計耐性が表示されます。</p>
+          </div>
+          <button type="button" class="gear-inline-btn gear-loadout__clear" id="gearLoadoutClear">選択をクリア</button>
+        </div>
+        <div class="gear-loadout__selection">
+          <span class="gear-loadout__summary-label">選択中の装備</span>
+          <ul id="gearLoadoutSelected" class="gear-loadout__selected"></ul>
+        </div>
+        <div class="gear-loadout__summary">
+          <span class="gear-loadout__summary-label">合計耐性</span>
+          <div id="gearLoadoutSummary" class="gear-resist-summary"></div>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>
+      メモはこのブラウザにのみ保存され、こちらから外部サーバーに送信されることはありません。
+      PC・スマホ間で共有したい場合は各端末で同じ内容を登録してください。
+    </p>
+  </footer>
+</body>
+</html>

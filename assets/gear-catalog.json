@@ -1,0 +1,2812 @@
+[
+  {
+    "name": "叡聖の博士服",
+    "level": 130,
+    "jobs": [
+      "デスマスター",
+      "隠者",
+      "賢者",
+      "占い師",
+      "僧侶",
+      "天地雷鳴士",
+      "魔法使い",
+      "竜術士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-130-2.php",
+    "image": "https://draquex.com/assets/img-bougu/b-130-2.jpg"
+  },
+  {
+    "name": "コスモスアーマー",
+    "level": 130,
+    "jobs": [
+      "ガーディアン",
+      "パラディン",
+      "戦士",
+      "魔剣士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-130-1.php",
+    "image": "https://draquex.com/assets/img-bougu/b-130-1.jpg"
+  },
+  {
+    "name": "ノクトルケープ",
+    "level": 130,
+    "jobs": [
+      "スーパースター",
+      "レンジャー",
+      "遊び人",
+      "踊り子",
+      "旅芸人"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-130-5.php",
+    "image": "https://draquex.com/assets/img-bougu/b-130-5.jpg"
+  },
+  {
+    "name": "トライドアーマー",
+    "level": 130,
+    "jobs": [
+      "バトルマスター",
+      "まもの使い",
+      "武闘家",
+      "踊り子"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-130-3.php",
+    "image": "https://draquex.com/assets/img-bougu/b-130-3.jpg"
+  },
+  {
+    "name": "月影の装束",
+    "level": 130,
+    "jobs": [
+      "どうぐ使い",
+      "海賊",
+      "盗賊",
+      "魔法戦士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-130-4.php",
+    "image": "https://draquex.com/assets/img-bougu/b-130-4.jpg"
+  },
+  {
+    "name": "アンテイクドレス",
+    "level": 128,
+    "jobs": [
+      "デスマスター",
+      "隠者",
+      "賢者",
+      "占い師",
+      "僧侶",
+      "天地雷鳴士",
+      "魔法使い",
+      "竜術士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-128-2.php",
+    "image": "https://draquex.com/assets/img-bougu/b-128-2.jpg"
+  },
+  {
+    "name": "常勝のよろい",
+    "level": 128,
+    "jobs": [
+      "ガーディアン",
+      "パラディン",
+      "戦士",
+      "魔剣士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-128-1.php",
+    "image": "https://draquex.com/assets/img-bougu/b-128-1.jpg"
+  },
+  {
+    "name": "妖精郷の舞踏服",
+    "level": 128,
+    "jobs": [
+      "スーパースター",
+      "レンジャー",
+      "遊び人",
+      "踊り子",
+      "旅芸人"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-128-5.php",
+    "image": "https://draquex.com/assets/img-bougu/b-128-5.jpg"
+  },
+  {
+    "name": "迅雷のスーツ",
+    "level": 128,
+    "jobs": [
+      "バトルマスター",
+      "まもの使い",
+      "武闘家",
+      "踊り子"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-128-3.php",
+    "image": "https://draquex.com/assets/img-bougu/b-128-3.jpg"
+  },
+  {
+    "name": "烈風のころも",
+    "level": 128,
+    "jobs": [
+      "どうぐ使い",
+      "海賊",
+      "盗賊",
+      "魔法戦士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-128-4.php",
+    "image": "https://draquex.com/assets/img-bougu/b-128-4.jpg"
+  },
+  {
+    "name": "陰陽博士のころも",
+    "level": 125,
+    "jobs": [
+      "デスマスター",
+      "隠者",
+      "賢者",
+      "占い師",
+      "僧侶",
+      "天地雷鳴士",
+      "魔法使い",
+      "竜術士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-125-2.php",
+    "image": "https://draquex.com/assets/img-bougu/b-125-2.jpg"
+  },
+  {
+    "name": "黒夜叉のよろい",
+    "level": 125,
+    "jobs": [
+      "ガーディアン",
+      "パラディン",
+      "戦士",
+      "魔剣士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-125-1.php",
+    "image": "https://draquex.com/assets/img-bougu/b-125-1.jpg"
+  },
+  {
+    "name": "瑞雲の道服",
+    "level": 125,
+    "jobs": [
+      "スーパースター",
+      "レンジャー",
+      "遊び人",
+      "踊り子",
+      "旅芸人"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-125-5.php",
+    "image": "https://draquex.com/assets/img-bougu/b-125-5.jpg"
+  },
+  {
+    "name": "一角鬼の闘着",
+    "level": 125,
+    "jobs": [
+      "バトルマスター",
+      "まもの使い",
+      "武闘家",
+      "踊り子"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-125-3.php",
+    "image": "https://draquex.com/assets/img-bougu/b-125-3.jpg"
+  },
+  {
+    "name": "隠密の装束",
+    "level": 125,
+    "jobs": [
+      "どうぐ使い",
+      "海賊",
+      "盗賊",
+      "魔法戦士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-125-4.php",
+    "image": "https://draquex.com/assets/img-bougu/b-125-4.jpg"
+  },
+  {
+    "name": "オスクトルローブ",
+    "level": 120,
+    "jobs": [
+      "デスマスター",
+      "隠者",
+      "賢者",
+      "占い師",
+      "僧侶",
+      "天地雷鳴士",
+      "魔法使い",
+      "竜術士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-120-2.php",
+    "image": "https://draquex.com/assets/img-bougu/b-120-2.jpg"
+  },
+  {
+    "name": "魔衛隊士のよろい",
+    "level": 120,
+    "jobs": [
+      "ガーディアン",
+      "パラディン",
+      "戦士",
+      "魔剣士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-120-1.php",
+    "image": "https://draquex.com/assets/img-bougu/b-120-1.jpg"
+  },
+  {
+    "name": "プロディトスーツ",
+    "level": 120,
+    "jobs": [
+      "スーパースター",
+      "レンジャー",
+      "遊び人",
+      "踊り子",
+      "旅芸人"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-120-5.php",
+    "image": "https://draquex.com/assets/img-bougu/b-120-5.jpg"
+  },
+  {
+    "name": "イグナイトメイル",
+    "level": 120,
+    "jobs": [
+      "バトルマスター",
+      "まもの使い",
+      "武闘家",
+      "踊り子"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-120-3.php",
+    "image": "https://draquex.com/assets/img-bougu/b-120-3.jpg"
+  },
+  {
+    "name": "乱破の忍び装束",
+    "level": 120,
+    "jobs": [
+      "どうぐ使い",
+      "海賊",
+      "盗賊",
+      "魔法戦士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-120-4.php",
+    "image": "https://draquex.com/assets/img-bougu/b-120-4.jpg"
+  },
+  {
+    "name": "ふしぎなボレロ",
+    "level": 118,
+    "jobs": [
+      "デスマスター",
+      "隠者",
+      "賢者",
+      "占い師",
+      "僧侶",
+      "天地雷鳴士",
+      "魔法使い",
+      "竜術士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-118-2.php",
+    "image": "https://draquex.com/assets/img-bougu/b-118-2.jpg"
+  },
+  {
+    "name": "ほのおのよろい",
+    "level": 118,
+    "jobs": [
+      "ガーディアン",
+      "パラディン",
+      "戦士",
+      "魔剣士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-118-1.php",
+    "image": "https://draquex.com/assets/img-bougu/b-118-1.jpg"
+  },
+  {
+    "name": "スパングルドレス",
+    "level": 118,
+    "jobs": [
+      "スーパースター",
+      "レンジャー",
+      "遊び人",
+      "踊り子",
+      "旅芸人"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-118-5.php",
+    "image": "https://draquex.com/assets/img-bougu/b-118-5.jpg"
+  },
+  {
+    "name": "天の冒険者のころも",
+    "level": 118,
+    "jobs": [
+      "バトルマスター",
+      "まもの使い",
+      "武闘家",
+      "踊り子"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-118-3.php",
+    "image": "https://draquex.com/assets/img-bougu/b-118-3.jpg"
+  },
+  {
+    "name": "しっこくのマント",
+    "level": 118,
+    "jobs": [
+      "どうぐ使い",
+      "海賊",
+      "盗賊",
+      "魔法戦士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-118-4.php",
+    "image": "https://draquex.com/assets/img-bougu/b-118-4.jpg"
+  },
+  {
+    "name": "ロードリーローブ",
+    "level": 115,
+    "jobs": [
+      "デスマスター",
+      "隠者",
+      "賢者",
+      "占い師",
+      "僧侶",
+      "天地雷鳴士",
+      "魔法使い",
+      "竜術士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-115-2.php",
+    "image": "https://draquex.com/assets/img-bougu/b-115-2.jpg"
+  },
+  {
+    "name": "蒼穹兵団のよろい",
+    "level": 115,
+    "jobs": [
+      "ガーディアン",
+      "パラディン",
+      "戦士",
+      "魔剣士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-115-1.php",
+    "image": "https://draquex.com/assets/img-bougu/b-115-1.jpg"
+  },
+  {
+    "name": "聖翼のドレス",
+    "level": 115,
+    "jobs": [
+      "スーパースター",
+      "レンジャー",
+      "遊び人",
+      "踊り子",
+      "旅芸人"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-115-5.php",
+    "image": "https://draquex.com/assets/img-bougu/b-115-5.jpg"
+  },
+  {
+    "name": "聖域の闘衣",
+    "level": 115,
+    "jobs": [
+      "バトルマスター",
+      "まもの使い",
+      "武闘家",
+      "踊り子"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-115-3.php",
+    "image": "https://draquex.com/assets/img-bougu/b-115-3.jpg"
+  },
+  {
+    "name": "空賊のシャツ",
+    "level": 115,
+    "jobs": [
+      "どうぐ使い",
+      "海賊",
+      "盗賊",
+      "魔法戦士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-115-4.php",
+    "image": "https://draquex.com/assets/img-bougu/b-115-4.jpg"
+  },
+  {
+    "name": "妖炎魔女のドレス",
+    "level": 110,
+    "jobs": [
+      "デスマスター",
+      "隠者",
+      "賢者",
+      "占い師",
+      "僧侶",
+      "天地雷鳴士",
+      "魔法使い",
+      "竜術士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-110-2.php",
+    "image": "https://draquex.com/assets/img-bougu/b-110-2.jpg"
+  },
+  {
+    "name": "魔侯爵のよろい",
+    "level": 110,
+    "jobs": [
+      "ガーディアン",
+      "パラディン",
+      "戦士",
+      "魔剣士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-110-1.php",
+    "image": "https://draquex.com/assets/img-bougu/b-110-1.jpg"
+  },
+  {
+    "name": "グレイスフルコート",
+    "level": 110,
+    "jobs": [
+      "スーパースター",
+      "レンジャー",
+      "遊び人",
+      "踊り子",
+      "旅芸人"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-110-5.php",
+    "image": "https://draquex.com/assets/img-bougu/b-110-5.jpg"
+  },
+  {
+    "name": "ファフニルメイル",
+    "level": 110,
+    "jobs": [
+      "バトルマスター",
+      "まもの使い",
+      "武闘家",
+      "踊り子"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-110-3.php",
+    "image": "https://draquex.com/assets/img-bougu/b-110-3.jpg"
+  },
+  {
+    "name": "ワンダラーズマント",
+    "level": 110,
+    "jobs": [
+      "どうぐ使い",
+      "海賊",
+      "盗賊",
+      "魔法戦士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-110-4.php",
+    "image": "https://draquex.com/assets/img-bougu/b-110-4.jpg"
+  },
+  {
+    "name": "ひかりのローブ",
+    "level": 108,
+    "jobs": [
+      "デスマスター",
+      "隠者",
+      "賢者",
+      "占い師",
+      "僧侶",
+      "天地雷鳴士",
+      "魔法使い",
+      "竜術士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-108-2.php",
+    "image": "https://draquex.com/assets/img-bougu/b-108-2.jpg"
+  },
+  {
+    "name": "ミラーアーマー",
+    "level": 108,
+    "jobs": [
+      "ガーディアン",
+      "パラディン",
+      "戦士",
+      "魔剣士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-108-1.php",
+    "image": "https://draquex.com/assets/img-bougu/b-108-1.jpg"
+  },
+  {
+    "name": "かぜのマント",
+    "level": 108,
+    "jobs": [
+      "スーパースター",
+      "レンジャー",
+      "遊び人",
+      "踊り子",
+      "旅芸人"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-108-5.php",
+    "image": "https://draquex.com/assets/img-bougu/b-108-5.jpg"
+  },
+  {
+    "name": "開祖の道着",
+    "level": 108,
+    "jobs": [
+      "バトルマスター",
+      "まもの使い",
+      "武闘家",
+      "踊り子"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-108-3.php",
+    "image": "https://draquex.com/assets/img-bougu/b-108-3.jpg"
+  },
+  {
+    "name": "ドラゴンベスト",
+    "level": 108,
+    "jobs": [
+      "どうぐ使い",
+      "海賊",
+      "盗賊",
+      "魔法戦士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-108-4.php",
+    "image": "https://draquex.com/assets/img-bougu/b-108-4.jpg"
+  },
+  {
+    "name": "アビスセーラー",
+    "level": 105,
+    "jobs": [
+      "デスマスター",
+      "隠者",
+      "賢者",
+      "占い師",
+      "僧侶",
+      "天地雷鳴士",
+      "魔法使い",
+      "竜術士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-105-5.php",
+    "image": "https://draquex.com/assets/img-bougu/b-105-5.jpg"
+  },
+  {
+    "name": "ネヴァンメイル",
+    "level": 105,
+    "jobs": [
+      "ガーディアン",
+      "パラディン",
+      "戦士",
+      "魔剣士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-105-1.php",
+    "image": "https://draquex.com/assets/img-bougu/b-105-1.jpg"
+  },
+  {
+    "name": "ヴィーラのころも",
+    "level": 105,
+    "jobs": [
+      "スーパースター",
+      "レンジャー",
+      "遊び人",
+      "踊り子",
+      "旅芸人"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-105-4.php",
+    "image": "https://draquex.com/assets/img-bougu/b-105-4.jpg"
+  },
+  {
+    "name": "ガナドールスーツ",
+    "level": 105,
+    "jobs": [
+      "バトルマスター",
+      "まもの使い",
+      "武闘家",
+      "踊り子"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-105-3.php",
+    "image": "https://draquex.com/assets/img-bougu/b-105-3.jpg"
+  },
+  {
+    "name": "神技のベスト",
+    "level": 105,
+    "jobs": [
+      "どうぐ使い",
+      "海賊",
+      "盗賊",
+      "魔法戦士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-105-2.php",
+    "image": "https://draquex.com/assets/img-bougu/b-105-2.jpg"
+  },
+  {
+    "name": "ソポスのころも",
+    "level": 100,
+    "jobs": [
+      "デスマスター",
+      "隠者",
+      "賢者",
+      "占い師",
+      "僧侶",
+      "天地雷鳴士",
+      "魔法使い",
+      "竜術士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-100-5.php",
+    "image": "https://draquex.com/assets/img-bougu/b-100-5.jpg"
+  },
+  {
+    "name": "ヴァルハラメイル",
+    "level": 100,
+    "jobs": [
+      "ガーディアン",
+      "パラディン",
+      "戦士",
+      "魔剣士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-100-1.php",
+    "image": "https://draquex.com/assets/img-bougu/b-100-1.jpg"
+  },
+  {
+    "name": "タンブラーシャツ",
+    "level": 100,
+    "jobs": [
+      "スーパースター",
+      "レンジャー",
+      "遊び人",
+      "踊り子",
+      "旅芸人"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-100-4.php",
+    "image": "https://draquex.com/assets/img-bougu/b-100-4.jpg"
+  },
+  {
+    "name": "レギオンメイル",
+    "level": 100,
+    "jobs": [
+      "バトルマスター",
+      "まもの使い",
+      "武闘家",
+      "踊り子"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-100-3.php",
+    "image": "https://draquex.com/assets/img-bougu/b-100-3.jpg"
+  },
+  {
+    "name": "大怪傑の装束",
+    "level": 100,
+    "jobs": [
+      "どうぐ使い",
+      "海賊",
+      "盗賊",
+      "魔法戦士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-100-2.php",
+    "image": "https://draquex.com/assets/img-bougu/b-100-2.jpg"
+  },
+  {
+    "name": "カテドラルローブ",
+    "level": 99,
+    "jobs": [
+      "デスマスター",
+      "隠者",
+      "賢者",
+      "占い師",
+      "僧侶",
+      "天地雷鳴士",
+      "魔法使い",
+      "竜術士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-99-1.php",
+    "image": "https://draquex.com/assets/img-bougu/b-99-5.jpg"
+  },
+  {
+    "name": "シュバリエメイル",
+    "level": 99,
+    "jobs": [
+      "ガーディアン",
+      "パラディン",
+      "戦士",
+      "魔剣士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-99-2.php",
+    "image": "https://draquex.com/assets/img-bougu/b-99-1.jpg"
+  },
+  {
+    "name": "ポールスタートップ",
+    "level": 99,
+    "jobs": [
+      "スーパースター",
+      "レンジャー",
+      "遊び人",
+      "踊り子",
+      "旅芸人"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-99-3.php",
+    "image": "https://draquex.com/assets/img-bougu/b-99-4.jpg"
+  },
+  {
+    "name": "族長のケープ",
+    "level": 99,
+    "jobs": [
+      "バトルマスター",
+      "まもの使い",
+      "武闘家",
+      "踊り子"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-99-5.php",
+    "image": "https://draquex.com/assets/img-bougu/b-99-2.jpg"
+  },
+  {
+    "name": "機械博士のコート",
+    "level": 99,
+    "jobs": [
+      "どうぐ使い",
+      "海賊",
+      "盗賊",
+      "魔法戦士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-99-4.php",
+    "image": "https://draquex.com/assets/img-bougu/b-99-3.jpg"
+  },
+  {
+    "name": "クルーガースーツ",
+    "level": 96,
+    "jobs": [
+      "デスマスター",
+      "隠者",
+      "賢者",
+      "占い師",
+      "僧侶",
+      "天地雷鳴士",
+      "魔法使い",
+      "竜術士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-96-2.php",
+    "image": "https://draquex.com/assets/img-bougu/b-96-5.jpg"
+  },
+  {
+    "name": "鉄壁のよろい",
+    "level": 96,
+    "jobs": [
+      "ガーディアン",
+      "パラディン",
+      "戦士",
+      "魔剣士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-96-5.php",
+    "image": "https://draquex.com/assets/img-bougu/b-96-1.jpg"
+  },
+  {
+    "name": "エトワールコート",
+    "level": 96,
+    "jobs": [
+      "スーパースター",
+      "レンジャー",
+      "遊び人",
+      "踊り子",
+      "旅芸人"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-96-1.php",
+    "image": "https://draquex.com/assets/img-bougu/b-96-4.jpg"
+  },
+  {
+    "name": "トライバルトップ",
+    "level": 96,
+    "jobs": [
+      "バトルマスター",
+      "まもの使い",
+      "武闘家",
+      "踊り子"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-96-3.php",
+    "image": "https://draquex.com/assets/img-bougu/b-96-2.jpg"
+  },
+  {
+    "name": "砂海のころも",
+    "level": 96,
+    "jobs": [
+      "どうぐ使い",
+      "海賊",
+      "盗賊",
+      "魔法戦士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-96-4.php",
+    "image": "https://draquex.com/assets/img-bougu/b-96-3.jpg"
+  },
+  {
+    "name": "賢哲のころも",
+    "level": 93,
+    "jobs": [
+      "デスマスター",
+      "隠者",
+      "賢者",
+      "占い師",
+      "僧侶",
+      "天地雷鳴士",
+      "魔法使い",
+      "竜術士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-93-5.php",
+    "image": "https://draquex.com/assets/img-bougu/b-93-5.jpg"
+  },
+  {
+    "name": "降魔のよろい",
+    "level": 93,
+    "jobs": [
+      "ガーディアン",
+      "パラディン",
+      "戦士",
+      "魔剣士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-93-1.php",
+    "image": "https://draquex.com/assets/img-bougu/b-93-1.jpg"
+  },
+  {
+    "name": "スターダムスーツ",
+    "level": 93,
+    "jobs": [
+      "スーパースター",
+      "レンジャー",
+      "遊び人",
+      "踊り子",
+      "旅芸人"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-93-3.php",
+    "image": "https://draquex.com/assets/img-bougu/b-93-3.jpg"
+  },
+  {
+    "name": "武神の道着",
+    "level": 93,
+    "jobs": [
+      "バトルマスター",
+      "まもの使い",
+      "武闘家",
+      "踊り子"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-93-4.php",
+    "image": "https://draquex.com/assets/img-bougu/b-93-4.jpg"
+  },
+  {
+    "name": "ヴァンガードコート",
+    "level": 93,
+    "jobs": [
+      "どうぐ使い",
+      "海賊",
+      "盗賊",
+      "魔法戦士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-93-2.php",
+    "image": "https://draquex.com/assets/img-bougu/b-93-2.jpg"
+  },
+  {
+    "name": "フォーチュンローブ",
+    "level": 90,
+    "jobs": [
+      "デスマスター",
+      "隠者",
+      "賢者",
+      "占い師",
+      "僧侶",
+      "天地雷鳴士",
+      "魔法使い",
+      "竜術士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-90-5.php",
+    "image": "https://draquex.com/assets/img-bougu/b-90-5.jpg"
+  },
+  {
+    "name": "大戦鬼のよろい",
+    "level": 90,
+    "jobs": [
+      "ガーディアン",
+      "パラディン",
+      "戦士",
+      "魔剣士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-90-1.php",
+    "image": "https://draquex.com/assets/img-bougu/b-90-1.jpg"
+  },
+  {
+    "name": "巨商のころも",
+    "level": 90,
+    "jobs": [
+      "スーパースター",
+      "レンジャー",
+      "遊び人",
+      "踊り子",
+      "旅芸人"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-90-4.php",
+    "image": "https://draquex.com/assets/img-bougu/b-90-4.jpg"
+  },
+  {
+    "name": "トーテムケープ",
+    "level": 90,
+    "jobs": [
+      "バトルマスター",
+      "まもの使い",
+      "武闘家",
+      "踊り子"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-90-2.php",
+    "image": "https://draquex.com/assets/img-bougu/b-90-2.jpg"
+  },
+  {
+    "name": "クイックジャケット",
+    "level": 90,
+    "jobs": [
+      "どうぐ使い",
+      "海賊",
+      "盗賊",
+      "魔法戦士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-90-3.php",
+    "image": "https://draquex.com/assets/img-bougu/b-90-3.jpg"
+  },
+  {
+    "name": "神託のローブ",
+    "level": 85,
+    "jobs": [
+      "デスマスター",
+      "隠者",
+      "賢者",
+      "占い師",
+      "僧侶",
+      "天地雷鳴士",
+      "魔法使い",
+      "竜術士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-85-5.php",
+    "image": "https://draquex.com/assets/img-bougu/b-85-5.jpg"
+  },
+  {
+    "name": "天宮騎士のよろい",
+    "level": 85,
+    "jobs": [
+      "ガーディアン",
+      "パラディン",
+      "戦士",
+      "魔剣士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-85-1.php",
+    "image": "https://draquex.com/assets/img-bougu/b-85-1.jpg"
+  },
+  {
+    "name": "クロッシュウェア",
+    "level": 85,
+    "jobs": [
+      "スーパースター",
+      "レンジャー",
+      "遊び人",
+      "踊り子",
+      "旅芸人"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-85-4.php",
+    "image": "https://draquex.com/assets/img-bougu/b-85-4.jpg"
+  },
+  {
+    "name": "風虎の道着",
+    "level": 85,
+    "jobs": [
+      "バトルマスター",
+      "まもの使い",
+      "武闘家",
+      "踊り子"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-85-2.php",
+    "image": "https://draquex.com/assets/img-bougu/b-85-2.jpg"
+  },
+  {
+    "name": "究明者のコート",
+    "level": 85,
+    "jobs": [
+      "どうぐ使い",
+      "海賊",
+      "盗賊",
+      "魔法戦士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-85-3.php",
+    "image": "https://draquex.com/assets/img-bougu/b-85-3.jpg"
+  },
+  {
+    "name": "聖賢者のローブ",
+    "level": 80,
+    "jobs": [
+      "デスマスター",
+      "隠者",
+      "賢者",
+      "占い師",
+      "僧侶",
+      "天地雷鳴士",
+      "魔法使い",
+      "竜術士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-80-5.php",
+    "image": "https://draquex.com/assets/img-bougu/b-80-5.jpg"
+  },
+  {
+    "name": "精霊王のクローク",
+    "level": 80,
+    "jobs": [
+      "デスマスター",
+      "隠者",
+      "賢者",
+      "占い師",
+      "僧侶",
+      "天地雷鳴士",
+      "魔法使い",
+      "竜術士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-80-9.php",
+    "image": "https://draquex.com/assets/img-bougu/b-80-10.jpg"
+  },
+  {
+    "name": "凱歌のよろい",
+    "level": 80,
+    "jobs": [
+      "ガーディアン",
+      "パラディン",
+      "戦士",
+      "魔剣士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-80-1.php",
+    "image": "https://draquex.com/assets/img-bougu/b-80-1.jpg"
+  },
+  {
+    "name": "騎神のよろい",
+    "level": 80,
+    "jobs": [
+      "ガーディアン",
+      "パラディン",
+      "戦士",
+      "魔剣士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-80-10.php",
+    "image": "https://draquex.com/assets/img-bougu/b-80-6.jpg"
+  },
+  {
+    "name": "古代王族のベスト",
+    "level": 80,
+    "jobs": [
+      "スーパースター",
+      "レンジャー",
+      "遊び人",
+      "踊り子",
+      "旅芸人"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-80-4.php",
+    "image": "https://draquex.com/assets/img-bougu/b-80-4.jpg"
+  },
+  {
+    "name": "舞い手の服",
+    "level": 80,
+    "jobs": [
+      "スーパースター",
+      "レンジャー",
+      "遊び人",
+      "踊り子",
+      "旅芸人"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-80-8.php",
+    "image": "https://draquex.com/assets/img-bougu/b-80-9.jpg"
+  },
+  {
+    "name": "黄竜の道着",
+    "level": 80,
+    "jobs": [
+      "バトルマスター",
+      "まもの使い",
+      "武闘家",
+      "踊り子"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-80-2.php",
+    "image": "https://draquex.com/assets/img-bougu/b-80-2.jpg"
+  },
+  {
+    "name": "獄獣のケーブ",
+    "level": 80,
+    "jobs": [
+      "バトルマスター",
+      "まもの使い",
+      "武闘家",
+      "踊り子"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-80-7.php",
+    "image": "https://draquex.com/assets/img-bougu/b-80-8.jpg"
+  },
+  {
+    "name": "ヴァイパーコート",
+    "level": 80,
+    "jobs": [
+      "どうぐ使い",
+      "海賊",
+      "盗賊",
+      "魔法戦士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-80-3.php",
+    "image": "https://draquex.com/assets/img-bougu/b-80-3.jpg"
+  },
+  {
+    "name": "魔技師ベスト",
+    "level": 80,
+    "jobs": [
+      "どうぐ使い",
+      "海賊",
+      "盗賊",
+      "魔法戦士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-80-6.php",
+    "image": "https://draquex.com/assets/img-bougu/b-80-7.jpg"
+  },
+  {
+    "name": "退魔の装束",
+    "level": 75,
+    "jobs": [
+      "デスマスター",
+      "隠者",
+      "賢者",
+      "占い師",
+      "僧侶",
+      "天地雷鳴士",
+      "魔法使い",
+      "竜術士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-75-5.php",
+    "image": "https://draquex.com/assets/img-bougu/b-75-5.jpg"
+  },
+  {
+    "name": "王軍師のよろい",
+    "level": 75,
+    "jobs": [
+      "ガーディアン",
+      "パラディン",
+      "戦士",
+      "魔剣士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-75-2.php",
+    "image": "https://draquex.com/assets/img-bougu/b-75-2.jpg"
+  },
+  {
+    "name": "レイブンスーツ",
+    "level": 75,
+    "jobs": [
+      "スーパースター",
+      "魔法戦士",
+      "遊び人",
+      "踊り子",
+      "旅芸人"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-75-4.php",
+    "image": "https://draquex.com/assets/img-bougu/b-75-4.jpg"
+  },
+  {
+    "name": "クリムゾンメイル",
+    "level": 75,
+    "jobs": [
+      "バトルマスター",
+      "まもの使い",
+      "武闘家",
+      "踊り子"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-75-1.php",
+    "image": "https://draquex.com/assets/img-bougu/b-75-1.jpg"
+  },
+  {
+    "name": "メカニックスーツ",
+    "level": 75,
+    "jobs": [
+      "どうぐ使い",
+      "レンジャー",
+      "海賊",
+      "盗賊"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-75-3.php",
+    "image": "https://draquex.com/assets/img-bougu/b-75-3.jpg"
+  },
+  {
+    "name": "さとりのころも",
+    "level": 70,
+    "jobs": [
+      "デスマスター",
+      "隠者",
+      "賢者",
+      "占い師",
+      "僧侶",
+      "天地雷鳴士",
+      "魔法使い",
+      "竜術士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-70-8.php",
+    "image": "https://draquex.com/assets/img-bougu/b-70-8.jpg"
+  },
+  {
+    "name": "神兵のよろい",
+    "level": 70,
+    "jobs": [
+      "ガーディアン",
+      "パラディン",
+      "戦士",
+      "魔剣士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-70-2.php",
+    "image": "https://draquex.com/assets/img-bougu/b-70-2.jpg"
+  },
+  {
+    "name": "さすらいのコート",
+    "level": 70,
+    "jobs": [
+      "レンジャー",
+      "魔法戦士",
+      "踊り子",
+      "旅芸人"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-70-3.php",
+    "image": "https://draquex.com/assets/img-bougu/b-70-3.jpg"
+  },
+  {
+    "name": "ひつじのころも",
+    "level": 70,
+    "jobs": [
+      "まもの使い",
+      "レンジャー",
+      "踊り子",
+      "旅芸人"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-70-4.php",
+    "image": "https://draquex.com/assets/img-bougu/b-70-4.jpg"
+  },
+  {
+    "name": "グレートマント",
+    "level": 70,
+    "jobs": [
+      "バトルマスター",
+      "海賊",
+      "盗賊",
+      "武闘家",
+      "踊り子"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-70-1.php",
+    "image": "https://draquex.com/assets/img-bougu/b-70-1.jpg"
+  },
+  {
+    "name": "タイフーンレザー",
+    "level": 70,
+    "jobs": [
+      "どうぐ使い",
+      "バトルマスター",
+      "海賊",
+      "盗賊"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-70-5.php",
+    "image": "https://draquex.com/assets/img-bougu/b-70-5.jpg"
+  },
+  {
+    "name": "ステージジャンパー",
+    "level": 70,
+    "jobs": [
+      "スーパースター",
+      "デスマスター",
+      "占い師",
+      "天地雷鳴士",
+      "魔法使い",
+      "遊び人",
+      "踊り子",
+      "竜術士",
+      "旅芸人"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-70-6.php",
+    "image": "https://draquex.com/assets/img-bougu/b-70-6.jpg"
+  },
+  {
+    "name": "ステージチュチュ",
+    "level": 70,
+    "jobs": [
+      "スーパースター",
+      "デスマスター",
+      "占い師",
+      "天地雷鳴士",
+      "魔法使い",
+      "遊び人",
+      "踊り子",
+      "竜術士",
+      "旅芸人"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-70-7.php",
+    "image": "https://draquex.com/assets/img-bougu/b-70-7.jpg"
+  },
+  {
+    "name": "飛竜のベスト",
+    "level": 65,
+    "jobs": [
+      "どうぐ使い",
+      "バトルマスター",
+      "レンジャー"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-65-5.php",
+    "image": "https://draquex.com/assets/img-bougu/b-65-5.jpg"
+  },
+  {
+    "name": "歌詠みのころも",
+    "level": 65,
+    "jobs": [
+      "スーパースター",
+      "デスマスター",
+      "レンジャー",
+      "隠者",
+      "占い師",
+      "僧侶",
+      "天地雷鳴士",
+      "遊び人",
+      "踊り子",
+      "旅芸人"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-65-3.php",
+    "image": "https://draquex.com/assets/img-bougu/b-65-3.jpg"
+  },
+  {
+    "name": "大賢者のほうい",
+    "level": 65,
+    "jobs": [
+      "デスマスター",
+      "隠者",
+      "賢者",
+      "占い師",
+      "僧侶",
+      "天地雷鳴士",
+      "魔法使い",
+      "竜術士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-65-9.php",
+    "image": "https://draquex.com/assets/img-bougu/b-65-9.jpg"
+  },
+  {
+    "name": "マスカレイドスーツ",
+    "level": 65,
+    "jobs": [
+      "ガーディアン",
+      "パラディン",
+      "戦士",
+      "魔剣士",
+      "魔法戦士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-65-1.php",
+    "image": "https://draquex.com/assets/img-bougu/b-65-1.jpg"
+  },
+  {
+    "name": "聖騎士のよろい",
+    "level": 65,
+    "jobs": [
+      "ガーディアン",
+      "パラディン",
+      "戦士",
+      "魔剣士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-65-2.php",
+    "image": "https://draquex.com/assets/img-bougu/b-65-2.jpg"
+  },
+  {
+    "name": "アイドルスーツ",
+    "level": 65,
+    "jobs": [
+      "スーパースター",
+      "魔法戦士",
+      "遊び人",
+      "踊り子",
+      "旅芸人"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-65-7.php",
+    "image": "https://draquex.com/assets/img-bougu/b-65-7.jpg"
+  },
+  {
+    "name": "チェイサーレザー",
+    "level": 65,
+    "jobs": [
+      "どうぐ使い",
+      "まもの使い",
+      "海賊",
+      "盗賊",
+      "武闘家",
+      "踊り子"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-65-6.php",
+    "image": "https://draquex.com/assets/img-bougu/b-65-6.jpg"
+  },
+  {
+    "name": "求道者の道着",
+    "level": 65,
+    "jobs": [
+      "バトルマスター",
+      "まもの使い",
+      "海賊",
+      "盗賊",
+      "武闘家",
+      "踊り子"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-65-4.php",
+    "image": "https://draquex.com/assets/img-bougu/b-65-4.jpg"
+  },
+  {
+    "name": "だいまどうローブ",
+    "level": 65,
+    "jobs": [
+      "デスマスター",
+      "賢者",
+      "占い師",
+      "天地雷鳴士",
+      "魔法使い",
+      "魔法戦士",
+      "竜術士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-65-8.php",
+    "image": "https://draquex.com/assets/img-bougu/b-65-8.jpg"
+  },
+  {
+    "name": "ノーブルコート",
+    "level": 60,
+    "jobs": [
+      "スーパースター",
+      "どうぐ使い",
+      "魔法戦士",
+      "遊び人"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-60-10.php",
+    "image": "https://draquex.com/assets/img-bougu/b-60-10.jpg"
+  },
+  {
+    "name": "ゴシックコート",
+    "level": 60,
+    "jobs": [
+      "デスマスター",
+      "隠者",
+      "占い師",
+      "僧侶",
+      "天地雷鳴士",
+      "魔法戦士",
+      "踊り子",
+      "旅芸人"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-60-13.php",
+    "image": "https://draquex.com/assets/img-bougu/b-60-13.jpg"
+  },
+  {
+    "name": "ゴシックビスチェ",
+    "level": 60,
+    "jobs": [
+      "デスマスター",
+      "隠者",
+      "占い師",
+      "僧侶",
+      "天地雷鳴士",
+      "魔法戦士",
+      "踊り子",
+      "旅芸人"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-60-14.php",
+    "image": "https://draquex.com/assets/img-bougu/b-60-14.jpg"
+  },
+  {
+    "name": "月のローブ",
+    "level": 60,
+    "jobs": [
+      "デスマスター",
+      "隠者",
+      "賢者",
+      "占い師",
+      "僧侶",
+      "天地雷鳴士",
+      "魔法使い",
+      "竜術士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-60-12.php",
+    "image": "https://draquex.com/assets/img-bougu/b-60-12.jpg"
+  },
+  {
+    "name": "古代魔術のほうい",
+    "level": 60,
+    "jobs": [
+      "デスマスター",
+      "隠者",
+      "賢者",
+      "占い師",
+      "僧侶",
+      "天地雷鳴士",
+      "魔法使い",
+      "竜術士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-60-16.php",
+    "image": "https://draquex.com/assets/img-bougu/b-60-16.jpg"
+  },
+  {
+    "name": "スパイクアーマー",
+    "level": 60,
+    "jobs": [
+      "ガーディアン",
+      "バトルマスター",
+      "パラディン",
+      "まもの使い",
+      "戦士",
+      "魔剣士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-60-2.php",
+    "image": "https://draquex.com/assets/img-bougu/b-60-2.jpg"
+  },
+  {
+    "name": "師団長のよろい",
+    "level": 60,
+    "jobs": [
+      "ガーディアン",
+      "パラディン",
+      "戦士",
+      "魔剣士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-60-1.php",
+    "image": "https://draquex.com/assets/img-bougu/b-60-1.jpg"
+  },
+  {
+    "name": "僧兵のころも",
+    "level": 60,
+    "jobs": [
+      "ガーディアン",
+      "パラディン",
+      "隠者",
+      "戦士",
+      "僧侶",
+      "魔剣士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-60-6.php",
+    "image": "https://draquex.com/assets/img-bougu/b-60-6.jpg"
+  },
+  {
+    "name": "モダンバニースーツ",
+    "level": 60,
+    "jobs": [
+      "スーパースター",
+      "どうぐ使い",
+      "魔法戦士",
+      "遊び人",
+      "踊り子",
+      "旅芸人"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-60-3.php",
+    "image": "https://draquex.com/assets/img-bougu/b-60-3.jpg"
+  },
+  {
+    "name": "ミラクルコート",
+    "level": 60,
+    "jobs": [
+      "スーパースター",
+      "レンジャー",
+      "遊び人",
+      "踊り子",
+      "旅芸人"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-60-8.php",
+    "image": "https://draquex.com/assets/img-bougu/b-60-8.jpg"
+  },
+  {
+    "name": "拳聖の道着",
+    "level": 60,
+    "jobs": [
+      "バトルマスター",
+      "まもの使い",
+      "武闘家",
+      "踊り子"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-60-5.php",
+    "image": "https://draquex.com/assets/img-bougu/b-60-5.jpg"
+  },
+  {
+    "name": "古武道着",
+    "level": 60,
+    "jobs": [
+      "まもの使い",
+      "海賊",
+      "盗賊",
+      "武闘家",
+      "踊り子"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-60-7.php",
+    "image": "https://draquex.com/assets/img-bougu/b-60-7.jpg"
+  },
+  {
+    "name": "原始獣のコート",
+    "level": 60,
+    "jobs": [
+      "バトルマスター",
+      "まもの使い",
+      "レンジャー",
+      "海賊",
+      "盗賊"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-60-4.php",
+    "image": "https://draquex.com/assets/img-bougu/b-60-4.jpg"
+  },
+  {
+    "name": "ワイルドジャケット",
+    "level": 60,
+    "jobs": [
+      "どうぐ使い",
+      "レンジャー",
+      "海賊",
+      "盗賊"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-60-9.php",
+    "image": "https://draquex.com/assets/img-bougu/b-60-9.jpg"
+  },
+  {
+    "name": "クラウンベスト",
+    "level": 60,
+    "jobs": [
+      "スーパースター",
+      "海賊",
+      "盗賊",
+      "遊び人",
+      "踊り子",
+      "旅芸人"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-60-11.php",
+    "image": "https://draquex.com/assets/img-bougu/b-60-11.jpg"
+  },
+  {
+    "name": "王宮魔術師ローブ",
+    "level": 60,
+    "jobs": [
+      "デスマスター",
+      "賢者",
+      "占い師",
+      "天地雷鳴士",
+      "魔法使い",
+      "魔法戦士",
+      "竜術士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-60-15.php",
+    "image": "https://draquex.com/assets/img-bougu/b-60-15.jpg"
+  },
+  {
+    "name": "しんりのローブ",
+    "level": 50,
+    "jobs": [
+      "デスマスター",
+      "隠者",
+      "賢者",
+      "占い師",
+      "僧侶",
+      "天地雷鳴士",
+      "魔法使い",
+      "竜術士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-50-9.php",
+    "image": "https://draquex.com/assets/img-bougu/b-50-9.jpg"
+  },
+  {
+    "name": "聖者のほうい",
+    "level": 50,
+    "jobs": [
+      "デスマスター",
+      "隠者",
+      "賢者",
+      "占い師",
+      "僧侶",
+      "天地雷鳴士",
+      "魔法使い",
+      "竜術士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-50-11.php",
+    "image": "https://draquex.com/assets/img-bougu/b-50-11.jpg"
+  },
+  {
+    "name": "インテリローブ",
+    "level": 50,
+    "jobs": [
+      "デスマスター",
+      "隠者",
+      "賢者",
+      "占い師",
+      "僧侶",
+      "天地雷鳴士",
+      "魔法使い",
+      "竜術士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-50-12.php",
+    "image": "https://draquex.com/assets/img-bougu/b-50-12.jpg"
+  },
+  {
+    "name": "やいばのよろい",
+    "level": 50,
+    "jobs": [
+      "ガーディアン",
+      "パラディン",
+      "戦士",
+      "魔剣士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-50-1.php",
+    "image": "https://draquex.com/assets/img-bougu/b-50-1.jpg"
+  },
+  {
+    "name": "古強者のよろい",
+    "level": 50,
+    "jobs": [
+      "ガーディアン",
+      "パラディン",
+      "戦士",
+      "魔剣士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-50-2.php",
+    "image": "https://draquex.com/assets/img-bougu/b-50-2.jpg"
+  },
+  {
+    "name": "ヘヴィーアーマー",
+    "level": 50,
+    "jobs": [
+      "ガーディアン",
+      "パラディン",
+      "戦士",
+      "魔剣士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-50-3.php",
+    "image": "https://draquex.com/assets/img-bougu/b-50-3.jpg"
+  },
+  {
+    "name": "ファントムマント",
+    "level": 50,
+    "jobs": [
+      "スーパースター",
+      "魔法戦士",
+      "遊び人",
+      "踊り子",
+      "旅芸人"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-50-8.php",
+    "image": "https://draquex.com/assets/img-bougu/b-50-8.jpg"
+  },
+  {
+    "name": "マスターベスト",
+    "level": 50,
+    "jobs": [
+      "スーパースター",
+      "どうぐ使い",
+      "魔法戦士",
+      "遊び人",
+      "踊り子",
+      "旅芸人"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-50-4.php",
+    "image": "https://draquex.com/assets/img-bougu/b-50-4.jpg"
+  },
+  {
+    "name": "バトルドレス",
+    "level": 50,
+    "jobs": [
+      "バトルマスター",
+      "まもの使い",
+      "武闘家",
+      "踊り子"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-50-7.php",
+    "image": "https://draquex.com/assets/img-bougu/b-50-7.jpg"
+  },
+  {
+    "name": "無法者のベスト",
+    "level": 50,
+    "jobs": [
+      "バトルマスター",
+      "まもの使い",
+      "レンジャー",
+      "海賊",
+      "盗賊",
+      "武闘家",
+      "踊り子"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-50-5.php",
+    "image": "https://draquex.com/assets/img-bougu/b-50-5.jpg"
+  },
+  {
+    "name": "トレジャーコート",
+    "level": 50,
+    "jobs": [
+      "どうぐ使い",
+      "レンジャー",
+      "海賊",
+      "盗賊"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-50-6.php",
+    "image": "https://draquex.com/assets/img-bougu/b-50-6.jpg"
+  },
+  {
+    "name": "占星術師のローブ",
+    "level": 50,
+    "jobs": [
+      "デスマスター",
+      "賢者",
+      "占い師",
+      "天地雷鳴士",
+      "魔法使い",
+      "踊り子",
+      "竜術士",
+      "旅芸人"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-50-10.php",
+    "image": "https://draquex.com/assets/img-bougu/b-50-10.jpg"
+  },
+  {
+    "name": "司祭のほうい",
+    "level": 42,
+    "jobs": [
+      "デスマスター",
+      "隠者",
+      "賢者",
+      "占い師",
+      "僧侶",
+      "天地雷鳴士",
+      "踊り子",
+      "旅芸人"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-42-7.php",
+    "image": "https://draquex.com/assets/img-bougu/b-42-7.jpg"
+  },
+  {
+    "name": "水のはごろも",
+    "level": 42,
+    "jobs": [
+      "デスマスター",
+      "隠者",
+      "占い師",
+      "僧侶",
+      "天地雷鳴士",
+      "魔法使い",
+      "竜術士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-42-8.php",
+    "image": "https://draquex.com/assets/img-bougu/b-42-8.jpg"
+  },
+  {
+    "name": "ホーリーローブ",
+    "level": 42,
+    "jobs": [
+      "デスマスター",
+      "隠者",
+      "賢者",
+      "占い師",
+      "僧侶",
+      "天地雷鳴士",
+      "魔法使い",
+      "踊り子",
+      "竜術士",
+      "旅芸人"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-42-6.php",
+    "image": "https://draquex.com/assets/img-bougu/b-42-6.jpg"
+  },
+  {
+    "name": "きじゅつしの服",
+    "level": 42,
+    "jobs": [
+      "スーパースター",
+      "デスマスター",
+      "レンジャー",
+      "隠者",
+      "占い師",
+      "僧侶",
+      "天地雷鳴士",
+      "武闘家",
+      "魔法使い",
+      "魔法戦士",
+      "遊び人",
+      "踊り子",
+      "竜術士",
+      "旅芸人"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-42-3.php",
+    "image": "https://draquex.com/assets/img-bougu/b-42-3.jpg"
+  },
+  {
+    "name": "くろがねのよろい",
+    "level": 42,
+    "jobs": [
+      "ガーディアン",
+      "バトルマスター",
+      "まもの使い",
+      "戦士",
+      "魔剣士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-42-1.php",
+    "image": "https://draquex.com/assets/img-bougu/b-42-1.jpg"
+  },
+  {
+    "name": "プラチナメイル",
+    "level": 42,
+    "jobs": [
+      "ガーディアン",
+      "パラディン",
+      "戦士",
+      "魔剣士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-42-2.php",
+    "image": "https://draquex.com/assets/img-bougu/b-42-2.jpg"
+  },
+  {
+    "name": "げんぶの道着",
+    "level": 42,
+    "jobs": [
+      "どうぐ使い",
+      "バトルマスター",
+      "まもの使い",
+      "海賊",
+      "盗賊",
+      "武闘家",
+      "踊り子"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-42-4.php",
+    "image": "https://draquex.com/assets/img-bougu/b-42-4.jpg"
+  },
+  {
+    "name": "フェンサーマント",
+    "level": 42,
+    "jobs": [
+      "スーパースター",
+      "どうぐ使い",
+      "レンジャー",
+      "海賊",
+      "盗賊",
+      "魔法戦士",
+      "遊び人",
+      "踊り子",
+      "旅芸人"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-42-5.php",
+    "image": "https://draquex.com/assets/img-bougu/b-42-5.jpg"
+  },
+  {
+    "name": "神官のほうい",
+    "level": 35,
+    "jobs": [
+      "デスマスター",
+      "隠者",
+      "賢者",
+      "占い師",
+      "僧侶",
+      "天地雷鳴士",
+      "踊り子",
+      "旅芸人"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-35-6.php",
+    "image": "https://draquex.com/assets/img-bougu/b-35-6.jpg"
+  },
+  {
+    "name": "かたりべの服",
+    "level": 35,
+    "jobs": [
+      "スーパースター",
+      "デスマスター",
+      "どうぐ使い",
+      "レンジャー",
+      "隠者",
+      "占い師",
+      "僧侶",
+      "天地雷鳴士",
+      "魔法使い",
+      "遊び人",
+      "踊り子",
+      "竜術士",
+      "旅芸人"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-35-3.php",
+    "image": "https://draquex.com/assets/img-bougu/b-35-3.jpg"
+  },
+  {
+    "name": "まほうのよろい",
+    "level": 35,
+    "jobs": [
+      "ガーディアン",
+      "パラディン",
+      "隠者",
+      "海賊",
+      "戦士",
+      "僧侶",
+      "盗賊",
+      "魔剣士",
+      "魔法戦士",
+      "踊り子",
+      "旅芸人"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-35-2.php",
+    "image": "https://draquex.com/assets/img-bougu/b-35-2.jpg"
+  },
+  {
+    "name": "バンデッドチェイン",
+    "level": 35,
+    "jobs": [
+      "ガーディアン",
+      "バトルマスター",
+      "まもの使い",
+      "レンジャー",
+      "海賊",
+      "戦士",
+      "盗賊",
+      "魔剣士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-35-1.php",
+    "image": "https://draquex.com/assets/img-bougu/b-35-1.jpg"
+  },
+  {
+    "name": "森人のチョッキ",
+    "level": 35,
+    "jobs": [
+      "スーパースター",
+      "どうぐ使い",
+      "バトルマスター",
+      "まもの使い",
+      "レンジャー",
+      "遊び人",
+      "踊り子",
+      "旅芸人"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-35-5.php",
+    "image": "https://draquex.com/assets/img-bougu/b-35-5.jpg"
+  },
+  {
+    "name": "けんぽうぎ",
+    "level": 35,
+    "jobs": [
+      "バトルマスター",
+      "まもの使い",
+      "武闘家",
+      "踊り子"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-35-4.php",
+    "image": "https://draquex.com/assets/img-bougu/b-35-4.jpg"
+  },
+  {
+    "name": "まどうしのころも",
+    "level": 35,
+    "jobs": [
+      "デスマスター",
+      "賢者",
+      "占い師",
+      "天地雷鳴士",
+      "魔法使い",
+      "竜術士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-35-7.php",
+    "image": "https://draquex.com/assets/img-bougu/b-35-7.jpg"
+  },
+  {
+    "name": "まもの使いの服",
+    "level": 30,
+    "jobs": [
+      "まもの使い"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-30-13.php",
+    "image": "https://draquex.com/assets/img-bougu/b-30-13.jpg"
+  },
+  {
+    "name": "スターコート",
+    "level": 30,
+    "jobs": [
+      "スーパースター"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-30-12.php",
+    "image": "https://draquex.com/assets/img-bougu/b-30-12.jpg"
+  },
+  {
+    "name": "デスマス",
+    "level": 30,
+    "jobs": [
+      "デスマスター"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-30-20.php",
+    "image": "https://draquex.com/assets/img-bougu/b-30-20.jpg"
+  },
+  {
+    "name": "バトマスアーマー",
+    "level": 30,
+    "jobs": [
+      "バトルマスター"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-30-7.php",
+    "image": "https://draquex.com/assets/img-bougu/b-30-7.jpg"
+  },
+  {
+    "name": "パラディンチェイン",
+    "level": 30,
+    "jobs": [
+      "パラディン"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-30-8.php",
+    "image": "https://draquex.com/assets/img-bougu/b-30-8.jpg"
+  },
+  {
+    "name": "魔法戦士団制服",
+    "level": 30,
+    "jobs": [
+      "魔法戦士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-30-9.php",
+    "image": "https://draquex.com/assets/img-bougu/b-30-9.jpg"
+  },
+  {
+    "name": "レンジャコート",
+    "level": 30,
+    "jobs": [
+      "レンジャー"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-30-10.php",
+    "image": "https://draquex.com/assets/img-bougu/b-30-10.jpg"
+  },
+  {
+    "name": "僧侶のほうい",
+    "level": 30,
+    "jobs": [
+      "僧侶"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-30-2.php",
+    "image": "https://draquex.com/assets/img-bougu/b-30-2.jpg"
+  },
+  {
+    "name": "王者のマント",
+    "level": 30,
+    "jobs": [
+      "ガーディアン",
+      "スーパースター",
+      "デスマスター",
+      "どうぐ使い",
+      "バトルマスター",
+      "パラディン",
+      "まもの使い",
+      "レンジャー",
+      "隠者",
+      "海賊",
+      "賢者",
+      "占い師",
+      "戦士",
+      "僧侶",
+      "天地雷鳴士",
+      "盗賊",
+      "武闘家",
+      "魔剣士",
+      "魔法使い",
+      "魔法戦士",
+      "遊び人",
+      "踊り子",
+      "竜術士",
+      "旅芸人"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-30-19.php",
+    "image": "https://draquex.com/assets/img-bougu/b-30-18.jpg"
+  },
+  {
+    "name": "魔剣士のよろい",
+    "level": 30,
+    "jobs": [
+      "魔剣士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-30-21.php",
+    "image": "https://draquex.com/assets/img-bougu/b-30-21.jpg"
+  },
+  {
+    "name": "占い師の服",
+    "level": 30,
+    "jobs": [
+      "占い師"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-30-17.php",
+    "image": "https://draquex.com/assets/img-bougu/b-30-17.jpg"
+  },
+  {
+    "name": "天地雷鳴士",
+    "level": 30,
+    "jobs": [
+      "天地雷鳴士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-30-18.php",
+    "image": "https://draquex.com/assets/img-bougu/b-30-19.jpg"
+  },
+  {
+    "name": "戦士のよろい",
+    "level": 30,
+    "jobs": [
+      "戦士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-30-1.php",
+    "image": "https://draquex.com/assets/img-bougu/b-30-1.jpg"
+  },
+  {
+    "name": "旅芸人の衣装",
+    "level": 30,
+    "jobs": [
+      "旅芸人"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-30-6.php",
+    "image": "https://draquex.com/assets/img-bougu/b-30-6.jpg"
+  },
+  {
+    "name": "ぶどうぎ",
+    "level": 30,
+    "jobs": [
+      "武闘家"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-30-4.php",
+    "image": "https://draquex.com/assets/img-bougu/b-30-4.jpg"
+  },
+  {
+    "name": "海賊の戦闘服",
+    "level": 30,
+    "jobs": [
+      "海賊"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-30-22.php",
+    "image": "https://draquex.com/assets/img-bougu/b-30-22.jpg"
+  },
+  {
+    "name": "盗賊のチュニック",
+    "level": 30,
+    "jobs": [
+      "盗賊"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-30-5.php",
+    "image": "https://draquex.com/assets/img-bougu/b-30-5.jpg"
+  },
+  {
+    "name": "竜術士の服",
+    "level": 30,
+    "jobs": [
+      "竜術士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-30-24.php",
+    "image": "https://draquex.com/assets/img-bougu/b-30-24.jpg"
+  },
+  {
+    "name": "賢者のころも",
+    "level": 30,
+    "jobs": [
+      "賢者"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-30-11.php",
+    "image": "https://draquex.com/assets/img-bougu/b-30-11.jpg"
+  },
+  {
+    "name": "踊り子のベスト",
+    "level": 30,
+    "jobs": [
+      "踊り子"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-30-15.php",
+    "image": "https://draquex.com/assets/img-bougu/b-30-15.jpg"
+  },
+  {
+    "name": "踊り子のドレス",
+    "level": 30,
+    "jobs": [
+      "踊り子"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-30-16.php",
+    "image": "https://draquex.com/assets/img-bougu/b-30-16.jpg"
+  },
+  {
+    "name": "遊び人の服",
+    "level": 30,
+    "jobs": [
+      "遊び人"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-50-13.php",
+    "image": "https://draquex.com/assets/img-bougu/b-50-13.jpg"
+  },
+  {
+    "name": "どうぐ使いの服",
+    "level": 30,
+    "jobs": [
+      "どうぐ使い"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-30-14.php",
+    "image": "https://draquex.com/assets/img-bougu/b-30-14.jpg"
+  },
+  {
+    "name": "隠者の服",
+    "level": 30,
+    "jobs": [
+      "隠者"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-30-25.php",
+    "image": "https://draquex.com/assets/img-bougu/b-30-25.jpg"
+  },
+  {
+    "name": "魔法使いの服",
+    "level": 30,
+    "jobs": [
+      "魔法使い"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-30-3.php",
+    "image": "https://draquex.com/assets/img-bougu/b-30-3.jpg"
+  },
+  {
+    "name": "木の葉のよろい",
+    "level": 28,
+    "jobs": [
+      "どうぐ使い",
+      "バトルマスター",
+      "パラディン",
+      "レンジャー"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-28-1.php",
+    "image": "https://draquex.com/assets/img-bougu/b-28-1.jpg"
+  },
+  {
+    "name": "まもりのローブ",
+    "level": 28,
+    "jobs": [
+      "デスマスター",
+      "隠者",
+      "賢者",
+      "占い師",
+      "僧侶",
+      "天地雷鳴士",
+      "魔法使い",
+      "踊り子",
+      "竜術士",
+      "旅芸人"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-28-6.php",
+    "image": "https://draquex.com/assets/img-bougu/b-28-6.jpg"
+  },
+  {
+    "name": "まじないしローブ",
+    "level": 28,
+    "jobs": [
+      "スーパースター",
+      "デスマスター",
+      "隠者",
+      "賢者",
+      "占い師",
+      "僧侶",
+      "天地雷鳴士",
+      "魔法使い",
+      "遊び人",
+      "竜術士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-28-7.php",
+    "image": "https://draquex.com/assets/img-bougu/b-28-7.jpg"
+  },
+  {
+    "name": "ウェスタンブラウス",
+    "level": 28,
+    "jobs": [
+      "ガーディアン",
+      "レンジャー",
+      "戦士",
+      "魔剣士",
+      "魔法戦士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-28-5.php",
+    "image": "https://draquex.com/assets/img-bougu/b-28-5.jpg"
+  },
+  {
+    "name": "はがねのよろい",
+    "level": 28,
+    "jobs": [
+      "ガーディアン",
+      "パラディン",
+      "海賊",
+      "戦士",
+      "盗賊",
+      "魔剣士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-28-2.php",
+    "image": "https://draquex.com/assets/img-bougu/b-28-2.jpg"
+  },
+  {
+    "name": "カンフージャケット",
+    "level": 28,
+    "jobs": [
+      "バトルマスター",
+      "まもの使い",
+      "武闘家",
+      "踊り子"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-28-3.php",
+    "image": "https://draquex.com/assets/img-bougu/b-28-3.jpg"
+  },
+  {
+    "name": "マタドールスーツ",
+    "level": 28,
+    "jobs": [
+      "スーパースター",
+      "どうぐ使い",
+      "バトルマスター",
+      "まもの使い",
+      "レンジャー",
+      "海賊",
+      "盗賊",
+      "武闘家",
+      "遊び人",
+      "踊り子",
+      "旅芸人"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-28-4.php",
+    "image": "https://draquex.com/assets/img-bougu/b-28-4.jpg"
+  },
+  {
+    "name": "新兵支給むねあて",
+    "level": 21,
+    "jobs": [
+      "パラディン",
+      "魔法戦士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-21-3.php",
+    "image": "https://draquex.com/assets/img-bougu/b-21-3.jpg"
+  },
+  {
+    "name": "手品師の服",
+    "level": 21,
+    "jobs": [
+      "スーパースター",
+      "デスマスター",
+      "どうぐ使い",
+      "バトルマスター",
+      "隠者",
+      "占い師",
+      "僧侶",
+      "天地雷鳴士",
+      "魔法使い",
+      "遊び人",
+      "踊り子",
+      "竜術士",
+      "旅芸人"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-21-6.php",
+    "image": "https://draquex.com/assets/img-bougu/b-21-6.jpg"
+  },
+  {
+    "name": "みかわしの服",
+    "level": 21,
+    "jobs": [
+      "スーパースター",
+      "デスマスター",
+      "レンジャー",
+      "隠者",
+      "海賊",
+      "賢者",
+      "占い師",
+      "僧侶",
+      "天地雷鳴士",
+      "盗賊",
+      "武闘家",
+      "魔法使い",
+      "遊び人",
+      "踊り子",
+      "竜術士",
+      "旅芸人"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-21-5.php",
+    "image": "https://draquex.com/assets/img-bougu/b-21-5.jpg"
+  },
+  {
+    "name": "ぎんのむねあて",
+    "level": 21,
+    "jobs": [
+      "ガーディアン",
+      "どうぐ使い",
+      "パラディン",
+      "レンジャー",
+      "隠者",
+      "海賊",
+      "戦士",
+      "僧侶",
+      "盗賊",
+      "魔剣士",
+      "踊り子",
+      "旅芸人"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-21-2.php",
+    "image": "https://draquex.com/assets/img-bougu/b-21-2.jpg"
+  },
+  {
+    "name": "てつのよろい",
+    "level": 21,
+    "jobs": [
+      "ガーディアン",
+      "パラディン",
+      "海賊",
+      "戦士",
+      "盗賊",
+      "魔剣士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-21-1.php",
+    "image": "https://draquex.com/assets/img-bougu/b-21-1.jpg"
+  },
+  {
+    "name": "はやてのベスト",
+    "level": 21,
+    "jobs": [
+      "バトルマスター",
+      "まもの使い",
+      "レンジャー",
+      "海賊",
+      "盗賊",
+      "武闘家",
+      "踊り子",
+      "旅芸人"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-21-4.php",
+    "image": "https://draquex.com/assets/img-bougu/b-21-4.jpg"
+  },
+  {
+    "name": "学者のころも",
+    "level": 21,
+    "jobs": [
+      "デスマスター",
+      "賢者",
+      "占い師",
+      "天地雷鳴士",
+      "魔法使い",
+      "竜術士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-21-7.php",
+    "image": "https://draquex.com/assets/img-bougu/b-21-7.jpg"
+  },
+  {
+    "name": "初級魔法戦士服",
+    "level": 14,
+    "jobs": [
+      "魔法戦士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-14-4.php",
+    "image": "https://draquex.com/assets/img-bougu/b-14-4.jpg"
+  },
+  {
+    "name": "くすしのローブ",
+    "level": 14,
+    "jobs": [
+      "スーパースター",
+      "デスマスター",
+      "隠者",
+      "賢者",
+      "占い師",
+      "僧侶",
+      "天地雷鳴士",
+      "魔法使い",
+      "遊び人",
+      "踊り子",
+      "竜術士",
+      "旅芸人"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-14-6.php",
+    "image": "https://draquex.com/assets/img-bougu/b-14-6.jpg"
+  },
+  {
+    "name": "サフランローブ",
+    "level": 14,
+    "jobs": [
+      "デスマスター",
+      "隠者",
+      "賢者",
+      "占い師",
+      "僧侶",
+      "天地雷鳴士",
+      "魔法使い",
+      "竜術士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-14-7.php",
+    "image": "https://draquex.com/assets/img-bougu/b-14-7.jpg"
+  },
+  {
+    "name": "くさりかたびら",
+    "level": 14,
+    "jobs": [
+      "ガーディアン",
+      "どうぐ使い",
+      "バトルマスター",
+      "パラディン",
+      "まもの使い",
+      "レンジャー",
+      "隠者",
+      "海賊",
+      "戦士",
+      "僧侶",
+      "盗賊",
+      "武闘家",
+      "魔剣士",
+      "踊り子",
+      "旅芸人"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-14-1.php",
+    "image": "https://draquex.com/assets/img-bougu/b-14-1.jpg"
+  },
+  {
+    "name": "てつのむねあて",
+    "level": 14,
+    "jobs": [
+      "ガーディアン",
+      "どうぐ使い",
+      "バトルマスター",
+      "パラディン",
+      "レンジャー",
+      "隠者",
+      "海賊",
+      "戦士",
+      "僧侶",
+      "盗賊",
+      "魔剣士",
+      "旅芸人"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-14-2.php",
+    "image": "https://draquex.com/assets/img-bougu/b-14-2.jpg"
+  },
+  {
+    "name": "ダンサーシャツ",
+    "level": 14,
+    "jobs": [
+      "スーパースター",
+      "遊び人",
+      "踊り子",
+      "旅芸人"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-14-5.php",
+    "image": "https://draquex.com/assets/img-bougu/b-14-5.jpg"
+  },
+  {
+    "name": "しゅうれんぎ",
+    "level": 14,
+    "jobs": [
+      "バトルマスター",
+      "まもの使い",
+      "武闘家",
+      "踊り子"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-14-3.php",
+    "image": "https://draquex.com/assets/img-bougu/b-14-3.jpg"
+  },
+  {
+    "name": "射手の服",
+    "level": 7,
+    "jobs": [
+      "デスマスター",
+      "どうぐ使い",
+      "レンジャー",
+      "賢者",
+      "占い師",
+      "天地雷鳴士",
+      "魔法戦士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-7-5.php",
+    "image": "https://draquex.com/assets/img-bougu/b-7-5.jpg"
+  },
+  {
+    "name": "きぬのローブ",
+    "level": 7,
+    "jobs": [
+      "スーパースター",
+      "デスマスター",
+      "隠者",
+      "賢者",
+      "占い師",
+      "僧侶",
+      "天地雷鳴士",
+      "魔法使い",
+      "遊び人",
+      "竜術士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-7-6.php",
+    "image": "https://draquex.com/assets/img-bougu/b-7-6.jpg"
+  },
+  {
+    "name": "いやしの服",
+    "level": 7,
+    "jobs": [
+      "デスマスター",
+      "隠者",
+      "賢者",
+      "占い師",
+      "僧侶",
+      "天地雷鳴士",
+      "魔法使い",
+      "竜術士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-7-7.php",
+    "image": "https://draquex.com/assets/img-bougu/b-7-7.jpg"
+  },
+  {
+    "name": "せいどうのよろい",
+    "level": 7,
+    "jobs": [
+      "ガーディアン",
+      "デスマスター",
+      "パラディン",
+      "レンジャー",
+      "隠者",
+      "海賊",
+      "占い師",
+      "戦士",
+      "僧侶",
+      "天地雷鳴士",
+      "盗賊",
+      "魔剣士",
+      "魔法戦士"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-7-2.php",
+    "image": "https://draquex.com/assets/img-bougu/b-7-2.jpg"
+  },
+  {
+    "name": "うろこのよろい",
+    "level": 7,
+    "jobs": [
+      "ガーディアン",
+      "どうぐ使い",
+      "パラディン",
+      "レンジャー",
+      "隠者",
+      "海賊",
+      "戦士",
+      "僧侶",
+      "盗賊",
+      "魔剣士",
+      "魔法戦士",
+      "踊り子",
+      "旅芸人"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-7-1.php",
+    "image": "https://draquex.com/assets/img-bougu/b-7-1.jpg"
+  },
+  {
+    "name": "ぬすっとの服",
+    "level": 7,
+    "jobs": [
+      "スーパースター",
+      "バトルマスター",
+      "まもの使い",
+      "レンジャー",
+      "海賊",
+      "盗賊",
+      "武闘家",
+      "遊び人",
+      "踊り子",
+      "旅芸人"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-7-4.php",
+    "image": "https://draquex.com/assets/img-bougu/b-7-4.jpg"
+  },
+  {
+    "name": "若手芸人の服",
+    "level": 7,
+    "jobs": [
+      "スーパースター",
+      "どうぐ使い",
+      "バトルマスター",
+      "レンジャー",
+      "海賊",
+      "盗賊",
+      "武闘家",
+      "遊び人",
+      "踊り子",
+      "旅芸人"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-7-3.php",
+    "image": "https://draquex.com/assets/img-bougu/b-7-3.jpg"
+  },
+  {
+    "name": "麻の服",
+    "level": 1,
+    "jobs": [
+      "レンジャー",
+      "隠者",
+      "賢者",
+      "占い師",
+      "僧侶",
+      "天地雷鳴士",
+      "魔法使い",
+      "踊り子",
+      "竜術士",
+      "旅芸人"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-1-3.php",
+    "image": "https://draquex.com/assets/img-bougu/b-1-3.jpg"
+  },
+  {
+    "name": "皮のよろい",
+    "level": 1,
+    "jobs": [
+      "ガーディアン",
+      "スーパースター",
+      "どうぐ使い",
+      "バトルマスター",
+      "パラディン",
+      "まもの使い",
+      "レンジャー",
+      "隠者",
+      "海賊",
+      "戦士",
+      "僧侶",
+      "盗賊",
+      "魔法戦士",
+      "遊び人",
+      "踊り子",
+      "旅芸人"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-1-1.php",
+    "image": "https://draquex.com/assets/img-bougu/b-1-1.jpg"
+  },
+  {
+    "name": "前座芸人の服",
+    "level": 1,
+    "jobs": [
+      "スーパースター",
+      "どうぐ使い",
+      "バトルマスター",
+      "まもの使い",
+      "レンジャー",
+      "海賊",
+      "盗賊",
+      "武闘家",
+      "遊び人",
+      "踊り子",
+      "旅芸人"
+    ],
+    "detailUrl": "https://draquex.com/bougu/set-1-2.php",
+    "image": "https://draquex.com/assets/img-bougu/b-1-2.jpg"
+  }
+]
