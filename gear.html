@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700&family=DotGothic16&family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css?v=4">
   <script src="assets/gear-catalog.js"></script>
+  <script src="assets/boss-resist-presets.js"></script>
   <script defer src="gear.js"></script>
 </head>
 <body data-mode="gear">
@@ -175,6 +176,61 @@
             <p class="gear-resist-note">同じ耐性を複数登録すると自動的に合算され、表示は最大100%までになります。</p>
           </div>
         </div>
+        <div class="gear-field">
+          <div class="gear-field__header">
+            <span>追加ステータス</span>
+            <button type="button" class="gear-inline-btn" id="gearClearStats">登録をクリア</button>
+          </div>
+          <div class="gear-stat-manager">
+            <div class="gear-stat-add">
+              <label class="gear-stat-select">
+                <span class="gear-resist-label">種類</span>
+                <select id="gearStatSelect">
+                  <option value="" disabled selected>ステータスを選択</option>
+                  <optgroup label="基礎ステータス">
+                    <option value="HP">HP</option>
+                    <option value="MP">MP</option>
+                    <option value="守備力">守備力</option>
+                    <option value="重さ">重さ</option>
+                    <option value="すばやさ">すばやさ</option>
+                    <option value="きようさ">きようさ</option>
+                    <option value="おしゃれさ">おしゃれさ</option>
+                  </optgroup>
+                  <optgroup label="攻撃・回復">
+                    <option value="攻撃力">攻撃力</option>
+                    <option value="攻撃魔力">攻撃魔力</option>
+                    <option value="回復魔力">回復魔力</option>
+                    <option value="特技ダメージ">特技ダメージ</option>
+                    <option value="呪文ダメージ">呪文ダメージ</option>
+                  </optgroup>
+                  <optgroup label="その他">
+                    <option value="行動間隔">行動間隔</option>
+                    <option value="ターン消費なし">ターン消費なし</option>
+                    <option value="必殺チャージ率">必殺チャージ率</option>
+                    <option value="会心率">会心率</option>
+                    <option value="呪文暴走率">呪文暴走率</option>
+                    <option value="移動速度">移動速度</option>
+                    <option value="custom">カスタム入力</option>
+                  </optgroup>
+                </select>
+              </label>
+              <label class="gear-stat-custom" id="gearStatCustomWrapper" hidden>
+                <span class="gear-resist-label">カスタム名</span>
+                <input id="gearStatCustom" type="text" placeholder="例) バイキ継続 / 回復量UP">
+              </label>
+              <label class="gear-stat-value">
+                <span class="gear-resist-label">数値</span>
+                <div class="gear-resist-value__input">
+                  <input id="gearStatValue" type="number" step="1" placeholder="+50">
+                  <span>pt</span>
+                </div>
+              </label>
+              <button type="button" class="gear-inline-btn gear-stat-add__btn" id="gearAddStat">追加</button>
+            </div>
+            <div id="gearStatEntries" class="gear-stat-entries" aria-live="polite"></div>
+            <p class="gear-resist-note">ステータスはそのまま表示されます（合計は行いません）。</p>
+          </div>
+        </div>
         <div class="gear-form__actions">
           <button type="submit" class="gear-submit" id="gearSubmit">保存する</button>
           <button type="button" class="gear-reset" id="gearReset">入力をリセット</button>
@@ -193,6 +249,24 @@
             <span class="gear-filter__label">耐性で絞り込み</span>
             <div id="gearResistFilterChips" class="gear-filter-chips" role="group" aria-label="耐性で絞り込み"></div>
           </label>
+          <label class="gear-filter gear-filter--boss">
+            <span class="gear-filter__label">ボス耐性プリセット</span>
+            <select id="gearBossPresetSelect">
+              <option value="">ボスを選択</option>
+            </select>
+            <p id="gearBossPresetSummary" class="gear-boss-summary">選択すると必須耐性で一括フィルターされます。</p>
+          </label>
+          <label class="gear-filter gear-filter--threshold">
+            <span class="gear-filter__label">必要ガード率</span>
+            <select id="gearResistThreshold">
+              <option value="0" selected>指定なし</option>
+              <option value="50">50%以上</option>
+              <option value="60">60%以上</option>
+              <option value="80">80%以上</option>
+              <option value="100">100%以上</option>
+            </select>
+            <small class="gear-filter__hint">選択中の耐性すべてに適用されます。</small>
+          </label>
           <label class="gear-filter">
             <span class="gear-filter__label">職業で絞り込み</span>
             <select id="gearJobFilter"></select>
@@ -206,7 +280,6 @@
         <button type="button" class="gear-tabs__btn" data-slot-filter="あたま">あたま</button>
         <button type="button" class="gear-tabs__btn" data-slot-filter="からだ上">からだ上</button>
         <button type="button" class="gear-tabs__btn" data-slot-filter="からだ下">からだ下</button>
-        <button type="button" class="gear-tabs__btn" data-slot-filter="ローブ（上下一体）">ローブ</button>
         <button type="button" class="gear-tabs__btn" data-slot-filter="うで">うで</button>
         <button type="button" class="gear-tabs__btn" data-slot-filter="足">足</button>
         <button type="button" class="gear-tabs__btn" data-slot-filter="指">指</button>

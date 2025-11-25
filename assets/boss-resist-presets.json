@@ -1,0 +1,1528 @@
+[
+  {
+    "name": "デスマシーン",
+    "category": "coin",
+    "categoryLabel": "COIN BOSS",
+    "resistances": [
+      {
+        "label": "ブレス耐性",
+        "priority": "must"
+      },
+      {
+        "label": "幻惑ガード",
+        "priority": "must"
+      },
+      {
+        "label": "転びガード",
+        "priority": "must"
+      }
+    ]
+  },
+  {
+    "name": "人食い火竜",
+    "category": "coin",
+    "categoryLabel": "COIN BOSS",
+    "resistances": [
+      {
+        "label": "ブレス耐性",
+        "priority": "must"
+      },
+      {
+        "label": "呪文耐性",
+        "priority": "must"
+      },
+      {
+        "label": "封印ガード",
+        "priority": "must"
+      },
+      {
+        "label": "炎耐性",
+        "priority": "must"
+      },
+      {
+        "label": "呪いガード",
+        "priority": "recommended"
+      },
+      {
+        "label": "混乱ガード",
+        "priority": "recommended"
+      }
+    ]
+  },
+  {
+    "name": "タイムマスター",
+    "category": "coin",
+    "categoryLabel": "COIN BOSS",
+    "resistances": [
+      {
+        "label": "呪文耐性",
+        "priority": "must"
+      },
+      {
+        "label": "氷耐性",
+        "priority": "recommended"
+      },
+      {
+        "label": "光耐性",
+        "priority": "nice"
+      },
+      {
+        "label": "炎耐性",
+        "priority": "nice"
+      }
+    ]
+  },
+  {
+    "name": "結界の守護者たち",
+    "category": "coin",
+    "categoryLabel": "COIN BOSS",
+    "resistances": [
+      {
+        "label": "呪いガード",
+        "priority": "must"
+      },
+      {
+        "label": "呪文耐性",
+        "priority": "must"
+      },
+      {
+        "label": "毒ガード",
+        "priority": "must"
+      },
+      {
+        "label": "転びガード",
+        "priority": "must"
+      },
+      {
+        "label": "幻惑ガード",
+        "priority": "recommended"
+      },
+      {
+        "label": "混乱ガード",
+        "priority": "recommended"
+      },
+      {
+        "label": "ブレス耐性",
+        "priority": "nice"
+      },
+      {
+        "label": "闇耐性",
+        "priority": "nice"
+      }
+    ]
+  },
+  {
+    "name": "究極エビルプリースト",
+    "category": "coin",
+    "categoryLabel": "COIN BOSS",
+    "resistances": [
+      {
+        "label": "呪文耐性",
+        "priority": "must"
+      },
+      {
+        "label": "眠りガード",
+        "priority": "must"
+      },
+      {
+        "label": "転びガード",
+        "priority": "must"
+      },
+      {
+        "label": "ブレス耐性",
+        "priority": "recommended"
+      }
+    ]
+  },
+  {
+    "name": "エビルプリースト",
+    "category": "coin",
+    "categoryLabel": "COIN BOSS",
+    "resistances": [
+      {
+        "label": "呪いガード",
+        "priority": "must"
+      },
+      {
+        "label": "転びガード",
+        "priority": "must"
+      },
+      {
+        "label": "闇耐性",
+        "priority": "must"
+      },
+      {
+        "label": "呪文耐性",
+        "priority": "recommended"
+      }
+    ]
+  },
+  {
+    "name": "アンドレアル",
+    "category": "coin",
+    "categoryLabel": "COIN BOSS",
+    "resistances": [
+      {
+        "label": "呪いガード",
+        "priority": "must"
+      },
+      {
+        "label": "毒ガード",
+        "priority": "must"
+      },
+      {
+        "label": "ブレス耐性",
+        "priority": "recommended"
+      }
+    ]
+  },
+  {
+    "name": "真・幻界諸侯",
+    "category": "coin",
+    "categoryLabel": "COIN BOSS",
+    "resistances": [
+      {
+        "label": "おびえガード",
+        "priority": "must"
+      },
+      {
+        "label": "眠りガード",
+        "priority": "must"
+      },
+      {
+        "label": "転びガード",
+        "priority": "must"
+      },
+      {
+        "label": "光耐性",
+        "priority": "recommended"
+      },
+      {
+        "label": "呪文耐性",
+        "priority": "recommended"
+      },
+      {
+        "label": "炎耐性",
+        "priority": "recommended"
+      },
+      {
+        "label": "マヒガード",
+        "priority": "nice"
+      },
+      {
+        "label": "呪いガード",
+        "priority": "nice"
+      },
+      {
+        "label": "幻惑ガード",
+        "priority": "nice"
+      },
+      {
+        "label": "雷耐性",
+        "priority": "nice"
+      },
+      {
+        "label": "魅了ガード",
+        "priority": "nice"
+      }
+    ]
+  },
+  {
+    "name": "ムドー",
+    "category": "coin",
+    "categoryLabel": "COIN BOSS",
+    "resistances": [
+      {
+        "label": "おびえガード",
+        "priority": "must"
+      },
+      {
+        "label": "呪文耐性",
+        "priority": "must"
+      },
+      {
+        "label": "眠りガード",
+        "priority": "must"
+      },
+      {
+        "label": "雷耐性",
+        "priority": "must"
+      },
+      {
+        "label": "光耐性",
+        "priority": "recommended"
+      },
+      {
+        "label": "炎耐性",
+        "priority": "recommended"
+      }
+    ]
+  },
+  {
+    "name": "プチムドー",
+    "category": "coin",
+    "categoryLabel": "COIN BOSS",
+    "resistances": [
+      {
+        "label": "おびえガード",
+        "priority": "must"
+      },
+      {
+        "label": "眠りガード",
+        "priority": "must"
+      },
+      {
+        "label": "光耐性",
+        "priority": "nice"
+      },
+      {
+        "label": "呪文耐性",
+        "priority": "nice"
+      },
+      {
+        "label": "炎耐性",
+        "priority": "nice"
+      },
+      {
+        "label": "雷耐性",
+        "priority": "nice"
+      }
+    ]
+  },
+  {
+    "name": "魔犬レオパルド",
+    "category": "coin",
+    "categoryLabel": "COIN BOSS",
+    "resistances": [
+      {
+        "label": "おびえガード",
+        "priority": "must"
+      },
+      {
+        "label": "ブレス耐性",
+        "priority": "must"
+      },
+      {
+        "label": "呪いガード",
+        "priority": "recommended"
+      },
+      {
+        "label": "毒ガード",
+        "priority": "recommended"
+      },
+      {
+        "label": "混乱ガード",
+        "priority": "recommended"
+      },
+      {
+        "label": "呪文耐性",
+        "priority": "nice"
+      },
+      {
+        "label": "氷耐性",
+        "priority": "nice"
+      },
+      {
+        "label": "闇耐性",
+        "priority": "nice"
+      }
+    ]
+  },
+  {
+    "name": "プチ魔犬レオパルド",
+    "category": "coin",
+    "categoryLabel": "COIN BOSS",
+    "resistances": [
+      {
+        "label": "おびえガード",
+        "priority": "must"
+      },
+      {
+        "label": "毒ガード",
+        "priority": "must"
+      },
+      {
+        "label": "ブレス耐性",
+        "priority": "recommended"
+      },
+      {
+        "label": "呪いガード",
+        "priority": "nice"
+      },
+      {
+        "label": "呪文耐性",
+        "priority": "nice"
+      },
+      {
+        "label": "氷耐性",
+        "priority": "nice"
+      },
+      {
+        "label": "混乱ガード",
+        "priority": "nice"
+      },
+      {
+        "label": "闇耐性",
+        "priority": "nice"
+      }
+    ]
+  },
+  {
+    "name": "ドラゴン",
+    "category": "coin",
+    "categoryLabel": "COIN BOSS",
+    "resistances": [
+      {
+        "label": "炎耐性",
+        "priority": "must"
+      },
+      {
+        "label": "ブレス耐性",
+        "priority": "recommended"
+      }
+    ]
+  },
+  {
+    "name": "プチドラゴン",
+    "category": "coin",
+    "categoryLabel": "COIN BOSS",
+    "resistances": [
+      {
+        "label": "ブレス耐性",
+        "priority": "recommended"
+      },
+      {
+        "label": "炎耐性",
+        "priority": "recommended"
+      }
+    ]
+  },
+  {
+    "name": "帝国三将軍",
+    "category": "coin",
+    "categoryLabel": "COIN BOSS",
+    "resistances": [
+      {
+        "label": "呪文耐性",
+        "priority": "must"
+      },
+      {
+        "label": "封印ガード",
+        "priority": "must"
+      },
+      {
+        "label": "幻惑ガード",
+        "priority": "must"
+      },
+      {
+        "label": "おびえガード",
+        "priority": "recommended"
+      },
+      {
+        "label": "眠りガード",
+        "priority": "recommended"
+      }
+    ]
+  },
+  {
+    "name": "プチ帝国三将軍",
+    "category": "coin",
+    "categoryLabel": "COIN BOSS",
+    "resistances": [
+      {
+        "label": "おびえガード",
+        "priority": "must"
+      },
+      {
+        "label": "呪文耐性",
+        "priority": "must"
+      },
+      {
+        "label": "封印ガード",
+        "priority": "must"
+      },
+      {
+        "label": "幻惑ガード",
+        "priority": "must"
+      },
+      {
+        "label": "眠りガード",
+        "priority": "recommended"
+      }
+    ]
+  },
+  {
+    "name": "ゴレオン将軍",
+    "category": "coin",
+    "categoryLabel": "COIN BOSS",
+    "resistances": [
+      {
+        "label": "おびえガード",
+        "priority": "must"
+      },
+      {
+        "label": "幻惑ガード",
+        "priority": "must"
+      },
+      {
+        "label": "呪いガード",
+        "priority": "recommended"
+      }
+    ]
+  },
+  {
+    "name": "ゲルニック将軍",
+    "category": "coin",
+    "categoryLabel": "COIN BOSS",
+    "resistances": [
+      {
+        "label": "呪文耐性",
+        "priority": "must"
+      },
+      {
+        "label": "封印ガード",
+        "priority": "must"
+      },
+      {
+        "label": "幻惑ガード",
+        "priority": "must"
+      },
+      {
+        "label": "眠りガード",
+        "priority": "must"
+      },
+      {
+        "label": "炎耐性",
+        "priority": "nice"
+      }
+    ]
+  },
+  {
+    "name": "プチゲルニック将軍",
+    "category": "coin",
+    "categoryLabel": "COIN BOSS",
+    "resistances": [
+      {
+        "label": "眠りガード",
+        "priority": "must"
+      },
+      {
+        "label": "呪文耐性",
+        "priority": "recommended"
+      },
+      {
+        "label": "封印ガード",
+        "priority": "recommended"
+      },
+      {
+        "label": "幻惑ガード",
+        "priority": "recommended"
+      },
+      {
+        "label": "炎耐性",
+        "priority": "nice"
+      }
+    ]
+  },
+  {
+    "name": "ギュメイ将軍",
+    "category": "coin",
+    "categoryLabel": "COIN BOSS",
+    "resistances": [
+      {
+        "label": "おびえガード",
+        "priority": "recommended"
+      },
+      {
+        "label": "光耐性",
+        "priority": "recommended"
+      }
+    ]
+  },
+  {
+    "name": "プチギュメイ将軍",
+    "category": "coin",
+    "categoryLabel": "COIN BOSS",
+    "resistances": [
+      {
+        "label": "おびえガード",
+        "priority": "recommended"
+      },
+      {
+        "label": "光耐性",
+        "priority": "recommended"
+      }
+    ]
+  },
+  {
+    "name": "暗黒の魔人",
+    "category": "coin",
+    "categoryLabel": "COIN BOSS",
+    "resistances": [
+      {
+        "label": "マヒガード",
+        "priority": "must"
+      },
+      {
+        "label": "転びガード",
+        "priority": "must"
+      },
+      {
+        "label": "土耐性",
+        "priority": "nice"
+      }
+    ]
+  },
+  {
+    "name": "暗黒の魔人強",
+    "category": "coin",
+    "categoryLabel": "COIN BOSS",
+    "resistances": [
+      {
+        "label": "マヒガード",
+        "priority": "must"
+      },
+      {
+        "label": "転びガード",
+        "priority": "must"
+      },
+      {
+        "label": "土耐性",
+        "priority": "nice"
+      }
+    ]
+  },
+  {
+    "name": "ドン・モグーラ",
+    "category": "coin",
+    "categoryLabel": "COIN BOSS",
+    "resistances": [
+      {
+        "label": "おびえガード",
+        "priority": "must"
+      },
+      {
+        "label": "幻惑ガード",
+        "priority": "must"
+      },
+      {
+        "label": "混乱ガード",
+        "priority": "must"
+      },
+      {
+        "label": "転びガード",
+        "priority": "must"
+      },
+      {
+        "label": "マヒガード",
+        "priority": "nice"
+      },
+      {
+        "label": "呪文耐性",
+        "priority": "nice"
+      }
+    ]
+  },
+  {
+    "name": "幻界の四諸侯",
+    "category": "coin",
+    "categoryLabel": "COIN BOSS",
+    "resistances": [
+      {
+        "label": "呪文耐性",
+        "priority": "must"
+      },
+      {
+        "label": "風耐性",
+        "priority": "must"
+      },
+      {
+        "label": "マヒガード",
+        "priority": "recommended"
+      },
+      {
+        "label": "雷耐性",
+        "priority": "nice"
+      }
+    ]
+  },
+  {
+    "name": "幻界の四諸侯強",
+    "category": "coin",
+    "categoryLabel": "COIN BOSS",
+    "resistances": [
+      {
+        "label": "呪いガード",
+        "priority": "must"
+      },
+      {
+        "label": "封印ガード",
+        "priority": "must"
+      },
+      {
+        "label": "混乱ガード",
+        "priority": "must"
+      },
+      {
+        "label": "風耐性",
+        "priority": "must"
+      },
+      {
+        "label": "マヒガード",
+        "priority": "recommended"
+      },
+      {
+        "label": "呪文耐性",
+        "priority": "recommended"
+      },
+      {
+        "label": "ブレス耐性",
+        "priority": "nice"
+      },
+      {
+        "label": "雷耐性",
+        "priority": "nice"
+      }
+    ]
+  },
+  {
+    "name": "プチ幻界の四諸侯",
+    "category": "coin",
+    "categoryLabel": "COIN BOSS",
+    "resistances": [
+      {
+        "label": "おびえガード",
+        "priority": "must"
+      },
+      {
+        "label": "幻惑ガード",
+        "priority": "must"
+      },
+      {
+        "label": "呪いガード",
+        "priority": "recommended"
+      }
+    ]
+  },
+  {
+    "name": "キラーマジンガ",
+    "category": "coin",
+    "categoryLabel": "COIN BOSS",
+    "resistances": [
+      {
+        "label": "転びガード",
+        "priority": "must"
+      },
+      {
+        "label": "土耐性",
+        "priority": "nice"
+      }
+    ]
+  },
+  {
+    "name": "伝説の三悪魔",
+    "category": "coin",
+    "categoryLabel": "COIN BOSS",
+    "resistances": [
+      {
+        "label": "踊りガード",
+        "priority": "must"
+      },
+      {
+        "label": "魅了ガード",
+        "priority": "must"
+      },
+      {
+        "label": "おびえガード",
+        "priority": "recommended"
+      },
+      {
+        "label": "毒ガード",
+        "priority": "recommended"
+      },
+      {
+        "label": "転びガード",
+        "priority": "recommended"
+      },
+      {
+        "label": "マヒガード",
+        "priority": "nice"
+      }
+    ]
+  },
+  {
+    "name": "伝説の三悪魔・闘",
+    "category": "coin",
+    "categoryLabel": "COIN BOSS",
+    "resistances": [
+      {
+        "label": "ブレス耐性",
+        "priority": "must"
+      },
+      {
+        "label": "マヒガード",
+        "priority": "must"
+      },
+      {
+        "label": "毒ガード",
+        "priority": "must"
+      },
+      {
+        "label": "踊りガード",
+        "priority": "must"
+      },
+      {
+        "label": "転びガード",
+        "priority": "recommended"
+      },
+      {
+        "label": "魅了ガード",
+        "priority": "recommended"
+      },
+      {
+        "label": "呪文耐性",
+        "priority": "nice"
+      }
+    ]
+  },
+  {
+    "name": "グラコス",
+    "category": "coin",
+    "categoryLabel": "COIN BOSS",
+    "resistances": [
+      {
+        "label": "マヒガード",
+        "priority": "recommended"
+      },
+      {
+        "label": "眠りガード",
+        "priority": "recommended"
+      },
+      {
+        "label": "踊りガード",
+        "priority": "recommended"
+      },
+      {
+        "label": "MP吸収ガード",
+        "priority": "nice"
+      },
+      {
+        "label": "呪いガード",
+        "priority": "nice"
+      },
+      {
+        "label": "呪文耐性",
+        "priority": "nice"
+      }
+    ]
+  },
+  {
+    "name": "キングヒドラ",
+    "category": "coin",
+    "categoryLabel": "COIN BOSS",
+    "resistances": [
+      {
+        "label": "ブレス耐性",
+        "priority": "must"
+      },
+      {
+        "label": "踊りガード",
+        "priority": "must"
+      },
+      {
+        "label": "おびえガード",
+        "priority": "recommended"
+      },
+      {
+        "label": "毒ガード",
+        "priority": "recommended"
+      }
+    ]
+  },
+  {
+    "name": "バラモス",
+    "category": "coin",
+    "categoryLabel": "COIN BOSS",
+    "resistances": [
+      {
+        "label": "封印ガード",
+        "priority": "must"
+      },
+      {
+        "label": "幻惑ガード",
+        "priority": "must"
+      },
+      {
+        "label": "転びガード",
+        "priority": "must"
+      },
+      {
+        "label": "魅了ガード",
+        "priority": "must"
+      }
+    ]
+  },
+  {
+    "name": "ドラゴンガイア",
+    "category": "coin",
+    "categoryLabel": "COIN BOSS",
+    "resistances": [
+      {
+        "label": "ブレス耐性",
+        "priority": "must"
+      }
+    ]
+  },
+  {
+    "name": "ドラゴンガイア強",
+    "category": "coin",
+    "categoryLabel": "COIN BOSS",
+    "resistances": [
+      {
+        "label": "おびえガード",
+        "priority": "must"
+      },
+      {
+        "label": "ブレス耐性",
+        "priority": "must"
+      },
+      {
+        "label": "炎耐性",
+        "priority": "recommended"
+      }
+    ]
+  },
+  {
+    "name": "悪霊の神々",
+    "category": "coin",
+    "categoryLabel": "COIN BOSS",
+    "resistances": [
+      {
+        "label": "封印ガード",
+        "priority": "must"
+      },
+      {
+        "label": "眠りガード",
+        "priority": "must"
+      },
+      {
+        "label": "転びガード",
+        "priority": "must"
+      },
+      {
+        "label": "マヒガード",
+        "priority": "recommended"
+      },
+      {
+        "label": "即死ガード",
+        "priority": "recommended"
+      }
+    ]
+  },
+  {
+    "name": "ベリアル",
+    "category": "coin",
+    "categoryLabel": "COIN BOSS",
+    "resistances": [
+      {
+        "label": "ブレス耐性",
+        "priority": "recommended"
+      },
+      {
+        "label": "マヒガード",
+        "priority": "recommended"
+      }
+    ]
+  },
+  {
+    "name": "バズズ",
+    "category": "coin",
+    "categoryLabel": "COIN BOSS",
+    "resistances": [
+      {
+        "label": "即死ガード",
+        "priority": "must"
+      },
+      {
+        "label": "封印ガード",
+        "priority": "must"
+      },
+      {
+        "label": "眠りガード",
+        "priority": "recommended"
+      },
+      {
+        "label": "ブレス耐性",
+        "priority": "nice"
+      },
+      {
+        "label": "呪文耐性",
+        "priority": "nice"
+      }
+    ]
+  },
+  {
+    "name": "アトラス",
+    "category": "coin",
+    "categoryLabel": "COIN BOSS",
+    "resistances": [
+      {
+        "label": "転びガード",
+        "priority": "must"
+      }
+    ]
+  },
+  {
+    "name": "牙王ゴースネル",
+    "category": "coin",
+    "categoryLabel": "COIN BOSS",
+    "resistances": [
+      {
+        "label": "マヒガード",
+        "priority": "must"
+      },
+      {
+        "label": "呪文耐性",
+        "priority": "must"
+      },
+      {
+        "label": "封印ガード",
+        "priority": "must"
+      },
+      {
+        "label": "毒ガード",
+        "priority": "recommended"
+      },
+      {
+        "label": "混乱ガード",
+        "priority": "recommended"
+      },
+      {
+        "label": "風耐性",
+        "priority": "recommended"
+      },
+      {
+        "label": "おびえガード",
+        "priority": "nice"
+      },
+      {
+        "label": "呪いガード",
+        "priority": "nice"
+      }
+    ]
+  },
+  {
+    "name": "輪王ザルトラ",
+    "category": "coin",
+    "categoryLabel": "COIN BOSS",
+    "resistances": [
+      {
+        "label": "ブレス耐性",
+        "priority": "must"
+      },
+      {
+        "label": "呪いガード",
+        "priority": "must"
+      },
+      {
+        "label": "呪文耐性",
+        "priority": "nice"
+      },
+      {
+        "label": "氷耐性",
+        "priority": "nice"
+      },
+      {
+        "label": "闇耐性",
+        "priority": "nice"
+      }
+    ]
+  },
+  {
+    "name": "剣王ガルドリオン",
+    "category": "coin",
+    "categoryLabel": "COIN BOSS",
+    "resistances": [
+      {
+        "label": "おびえガード",
+        "priority": "must"
+      },
+      {
+        "label": "マヒガード",
+        "priority": "must"
+      },
+      {
+        "label": "毒ガード",
+        "priority": "must"
+      },
+      {
+        "label": "転びガード",
+        "priority": "must"
+      }
+    ]
+  },
+  {
+    "name": "震王ジュノーガ",
+    "category": "coin",
+    "categoryLabel": "COIN BOSS",
+    "resistances": [
+      {
+        "label": "即死ガード",
+        "priority": "must"
+      },
+      {
+        "label": "混乱ガード",
+        "priority": "must"
+      },
+      {
+        "label": "炎耐性",
+        "priority": "must"
+      },
+      {
+        "label": "ブレス耐性",
+        "priority": "nice"
+      },
+      {
+        "label": "呪文耐性",
+        "priority": "nice"
+      }
+    ]
+  },
+  {
+    "name": "タロット魔人強",
+    "category": "coin",
+    "categoryLabel": "COIN BOSS",
+    "resistances": [
+      {
+        "label": "マヒガード",
+        "priority": "must"
+      },
+      {
+        "label": "転びガード",
+        "priority": "must"
+      },
+      {
+        "label": "おびえガード",
+        "priority": "recommended"
+      },
+      {
+        "label": "呪文耐性",
+        "priority": "recommended"
+      },
+      {
+        "label": "ブレス耐性",
+        "priority": "nice"
+      }
+    ]
+  },
+  {
+    "name": "聖守護者 レギルラッゾ＆ローガスト",
+    "category": "saint",
+    "categoryLabel": "END CONTENT",
+    "resistances": [
+      {
+        "label": "呪いガード",
+        "priority": "must"
+      },
+      {
+        "label": "ブレス耐性",
+        "priority": "must"
+      },
+      {
+        "label": "おびえガード",
+        "priority": "recommended"
+      },
+      {
+        "label": "混乱ガード",
+        "priority": "recommended"
+      },
+      {
+        "label": "幻惑ガード",
+        "priority": "recommended"
+      }
+    ]
+  },
+  {
+    "name": "聖守護者 紅殻魔スコルパイド",
+    "category": "saint",
+    "categoryLabel": "END CONTENT",
+    "resistances": [
+      {
+        "label": "即死ガード",
+        "priority": "must"
+      },
+      {
+        "label": "毒ガード",
+        "priority": "must"
+      },
+      {
+        "label": "封印ガード",
+        "priority": "recommended"
+      },
+      {
+        "label": "呪いガード",
+        "priority": "recommended"
+      },
+      {
+        "label": "混乱ガード",
+        "priority": "recommended"
+      },
+      {
+        "label": "幻惑ガード",
+        "priority": "recommended"
+      }
+    ]
+  },
+  {
+    "name": "聖守護者 翠将鬼ジェルザーク",
+    "category": "saint",
+    "categoryLabel": "END CONTENT",
+    "resistances": [
+      {
+        "label": "混乱ガード",
+        "priority": "must"
+      },
+      {
+        "label": "踊りガード",
+        "priority": "must"
+      },
+      {
+        "label": "幻惑ガード",
+        "priority": "must"
+      },
+      {
+        "label": "転びガード",
+        "priority": "must"
+      },
+      {
+        "label": "ブレス耐性",
+        "priority": "must"
+      },
+      {
+        "label": "眠りガード",
+        "priority": "recommended"
+      },
+      {
+        "label": "封印ガード",
+        "priority": "nice"
+      },
+      {
+        "label": "呪いガード",
+        "priority": "nice"
+      },
+      {
+        "label": "マヒガード",
+        "priority": "nice"
+      }
+    ]
+  },
+  {
+    "name": "聖守護者 剛獣鬼ガルドドン",
+    "category": "saint",
+    "categoryLabel": "END CONTENT",
+    "resistances": [
+      {
+        "label": "マヒガード",
+        "priority": "recommended"
+      },
+      {
+        "label": "雷耐性",
+        "priority": "nice"
+      }
+    ]
+  },
+  {
+    "name": "聖守護者 羅刹王バラシュナ",
+    "category": "saint",
+    "categoryLabel": "END CONTENT",
+    "resistances": [
+      {
+        "label": "毒ガード",
+        "priority": "must"
+      },
+      {
+        "label": "即死ガード",
+        "priority": "must"
+      },
+      {
+        "label": "転びガード",
+        "priority": "must"
+      },
+      {
+        "label": "呪文耐性",
+        "priority": "must"
+      },
+      {
+        "label": "おびえガード",
+        "priority": "recommended"
+      },
+      {
+        "label": "混乱ガード",
+        "priority": "nice"
+      },
+      {
+        "label": "踊りガード",
+        "priority": "nice"
+      }
+    ]
+  },
+  {
+    "name": "深淵の咎人 凶禍のフラウソン",
+    "category": "abyss",
+    "categoryLabel": "END CONTENT",
+    "resistances": [
+      {
+        "label": "闇耐性",
+        "priority": "must"
+      },
+      {
+        "label": "転びガード",
+        "priority": "must"
+      },
+      {
+        "label": "呪いガード",
+        "priority": "recommended"
+      },
+      {
+        "label": "おびえガード",
+        "priority": "recommended"
+      },
+      {
+        "label": "ブレス耐性",
+        "priority": "recommended"
+      },
+      {
+        "label": "風耐性",
+        "priority": "nice"
+      }
+    ]
+  },
+  {
+    "name": "深淵の咎人 厭悪のルベランギス",
+    "category": "abyss",
+    "categoryLabel": "END CONTENT",
+    "resistances": [
+      {
+        "label": "呪いガード",
+        "priority": "must"
+      },
+      {
+        "label": "混乱ガード",
+        "priority": "must"
+      },
+      {
+        "label": "ブレス耐性",
+        "priority": "recommended"
+      },
+      {
+        "label": "雷耐性",
+        "priority": "recommended"
+      },
+      {
+        "label": "転びガード",
+        "priority": "recommended"
+      },
+      {
+        "label": "封印ガード",
+        "priority": "nice"
+      }
+    ]
+  },
+  {
+    "name": "深淵の咎人 絶念のアウルモッド",
+    "category": "abyss",
+    "categoryLabel": "END CONTENT",
+    "resistances": [
+      {
+        "label": "呪いガード",
+        "priority": "must"
+      },
+      {
+        "label": "マヒガード",
+        "priority": "must"
+      },
+      {
+        "label": "混乱ガード",
+        "priority": "recommended"
+      },
+      {
+        "label": "封印ガード",
+        "priority": "recommended"
+      },
+      {
+        "label": "闇耐性",
+        "priority": "recommended"
+      },
+      {
+        "label": "ブレス耐性",
+        "priority": "nice"
+      }
+    ]
+  },
+  {
+    "name": "聖守護者 邪蒼鎧デルメゼ",
+    "category": "saint",
+    "categoryLabel": "END CONTENT",
+    "resistances": [
+      {
+        "label": "ブレス耐性",
+        "priority": "must"
+      },
+      {
+        "label": "転びガード",
+        "priority": "must"
+      },
+      {
+        "label": "呪いガード",
+        "priority": "recommended"
+      },
+      {
+        "label": "幻惑ガード",
+        "priority": "recommended"
+      },
+      {
+        "label": "混乱ガード",
+        "priority": "nice"
+      }
+    ]
+  },
+  {
+    "name": "深淵の咎人 悲愴のウィリーデ",
+    "category": "abyss",
+    "categoryLabel": "END CONTENT",
+    "resistances": [
+      {
+        "label": "呪文耐性",
+        "priority": "must"
+      },
+      {
+        "label": "マヒガード",
+        "priority": "must"
+      },
+      {
+        "label": "幻惑ガード",
+        "priority": "must"
+      }
+    ]
+  },
+  {
+    "name": "深淵の咎人 燦滅のノクゼリア",
+    "category": "abyss",
+    "categoryLabel": "END CONTENT",
+    "resistances": [
+      {
+        "label": "呪文耐性",
+        "priority": "must"
+      },
+      {
+        "label": "ブレス耐性",
+        "priority": "must"
+      },
+      {
+        "label": "転びガード",
+        "priority": "recommended"
+      },
+      {
+        "label": "毒ガード",
+        "priority": "nice"
+      },
+      {
+        "label": "マヒガード",
+        "priority": "nice"
+      },
+      {
+        "label": "呪いガード",
+        "priority": "nice"
+      },
+      {
+        "label": "混乱ガード",
+        "priority": "nice"
+      }
+    ]
+  },
+  {
+    "name": "常闇の竜レグナード",
+    "category": "tokoyami",
+    "categoryLabel": "END CONTENT",
+    "resistances": [
+      {
+        "label": "ブレス耐性",
+        "priority": "must"
+      },
+      {
+        "label": "呪いガード",
+        "priority": "must"
+      },
+      {
+        "label": "マヒガード",
+        "priority": "must"
+      },
+      {
+        "label": "封印ガード",
+        "priority": "must"
+      },
+      {
+        "label": "おびえガード",
+        "priority": "nice"
+      }
+    ]
+  },
+  {
+    "name": "常闇の聖戦 ダークキング",
+    "category": "tokoyami",
+    "categoryLabel": "END CONTENT",
+    "resistances": [
+      {
+        "label": "毒ガード",
+        "priority": "must"
+      },
+      {
+        "label": "幻惑ガード",
+        "priority": "recommended"
+      },
+      {
+        "label": "風耐性",
+        "priority": "nice"
+      },
+      {
+        "label": "闇耐性",
+        "priority": "nice"
+      }
+    ]
+  },
+  {
+    "name": "常闇の聖戦 海冥主メイヴ",
+    "category": "tokoyami",
+    "categoryLabel": "END CONTENT",
+    "resistances": [
+      {
+        "label": "幻惑ガード",
+        "priority": "must"
+      },
+      {
+        "label": "マヒガード",
+        "priority": "must"
+      },
+      {
+        "label": "呪いガード",
+        "priority": "recommended"
+      },
+      {
+        "label": "混乱ガード",
+        "priority": "recommended"
+      },
+      {
+        "label": "封印ガード",
+        "priority": "recommended"
+      },
+      {
+        "label": "呪文耐性",
+        "priority": "nice"
+      },
+      {
+        "label": "雷耐性",
+        "priority": "nice"
+      }
+    ]
+  }
+]

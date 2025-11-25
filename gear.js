@@ -39,6 +39,7 @@ const resistanceDefinitions = [
 ];
 
 const GEAR_DATA_URL = 'assets/gear-catalog.json';
+const BOSS_PRESETS_URL = 'assets/boss-resist-presets.json';
 const STORAGE_KEY = 'dq10GearMemoEntries';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -52,6 +53,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const addResistBtn = document.getElementById('gearAddResist');
   const resistEntriesContainer = document.getElementById('gearResistEntries');
   const resistSummaryContainer = document.getElementById('gearResistSummary');
+  const statSelect = document.getElementById('gearStatSelect');
+  const statCustomInput = document.getElementById('gearStatCustom');
+  const statCustomWrapper = document.getElementById('gearStatCustomWrapper');
+  const statValueInput = document.getElementById('gearStatValue');
+  const addStatBtn = document.getElementById('gearAddStat');
+  const statEntriesContainer = document.getElementById('gearStatEntries');
   const searchInput = document.getElementById('gearSearch');
   const clearSearchBtn = document.getElementById('gearClearSearch');
   const listEl = document.getElementById('gearList');
@@ -60,6 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const submitBtn = document.getElementById('gearSubmit');
   const resetBtn = document.getElementById('gearReset');
   const clearResistsBtn = document.getElementById('gearClearResists');
+  const clearStatsBtn = document.getElementById('gearClearStats');
   const visibleCount = document.getElementById('gearVisibleCount');
   const ownedCount = document.getElementById('ownedCount');
   const trackedResistCount = document.getElementById('trackedResistCount');
@@ -76,8 +84,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const loadoutClearBtn = document.getElementById('gearLoadoutClear');
   const loadoutSelectedList = document.getElementById('gearLoadoutSelected');
   const resistFilterContainer = document.getElementById('gearResistFilterChips');
+  const resistThresholdSelect = document.getElementById('gearResistThreshold');
   const jobFilterSelect = document.getElementById('gearJobFilter');
+  const bossPresetSelect = document.getElementById('gearBossPresetSelect');
+  const bossPresetSummary = document.getElementById('gearBossPresetSummary');
   const SLOT_CUSTOM_VALUE = 'custom';
+  const STAT_CUSTOM_VALUE = 'custom';
   const slotPresetValues = slotSelect
     ? Array.from(slotSelect.options)
         .map((option) => option.value)
@@ -90,22 +102,30 @@ document.addEventListener('DOMContentLoaded', () => {
   let entries = loadEntries();
   let editingId = null;
   let formResistances = [];
+  let formStats = [];
   let gearCatalogEntries = [];
   let catalogEntryMap = new Map();
   let catalogLoaded = false;
   let catalogLoadError = false;
   let selectedLoadoutIds = new Set();
   const selectedResistFilters = new Set();
+  let bossPresets = [];
+  let bossPresetMap = new Map();
+  let activeBossPreset = null;
   let activeSlotFilter = 'all';
 
   buildResistanceSelect(resistSelect);
   renderResistanceFilterChips();
   buildJobFilterSelect(jobFilterSelect, jobSelect);
+  loadBossPresets();
+  updateBossPresetSummary();
   loadCatalogEntries();
   updateCatalogControls();
   handleSlotChange();
   handleJobChange();
   renderResistanceEntries();
+  renderStatEntries();
+  handleStatChange();
   renderState();
   updateClearButtons();
 
@@ -116,6 +136,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const note = noteInput.value.trim();
     const jobs = getSelectedJobs();
     const resistances = serializeResistances();
+    const stats = serializeStats();
     if (!slot) {
       slotSelect?.focus();
       return;
@@ -128,7 +149,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (editingId) {
       entries = entries.map((entry) =>
         entry.id === editingId
-          ? { ...entry, name, slot, note, jobs, resistances, updatedAt: timestamp }
+          ? { ...entry, name, slot, note, jobs, resistances, stats, updatedAt: timestamp }
           : entry
       );
     } else {
@@ -139,6 +160,7 @@ document.addEventListener('DOMContentLoaded', () => {
         note,
         jobs,
         resistances,
+        stats,
         updatedAt: timestamp
       };
       entries = [newEntry, ...entries];
@@ -154,6 +176,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   clearResistsBtn.addEventListener('click', () => {
     setFormResistances([]);
+    updateClearButtons();
+  });
+
+  clearStatsBtn?.addEventListener('click', () => {
+    setFormStats([]);
     updateClearButtons();
   });
 
@@ -177,6 +204,7 @@ document.addEventListener('DOMContentLoaded', () => {
   clearSearchBtn.addEventListener('click', () => {
     searchInput.value = '';
     clearResistFilter();
+    resetResistThreshold();
     clearJobFilter();
     renderList();
     updateClearButtons();
@@ -199,7 +227,23 @@ document.addEventListener('DOMContentLoaded', () => {
     handleJobChange();
   });
 
-  resistFilterContainer?.addEventListener('click', (event) => {
+  statSelect?.addEventListener('change', () => {
+    handleStatChange();
+  });
+
+  addStatBtn?.addEventListener('click', (event) => {
+    event.preventDefault();
+    handleAddStat();
+  });
+
+  statValueInput?.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter') {
+      event.preventDefault();
+      handleAddStat();
+    }
+  });
+
+  resistFilterContainer?.addEventListener('pointerdown', (event) => {
     const chip = event.target.closest('[data-resist-filter]');
     if (!chip) return;
     const value = chip.dataset.resistFilter;
@@ -207,15 +251,28 @@ document.addEventListener('DOMContentLoaded', () => {
     if (selectedResistFilters.has(value)) {
       selectedResistFilters.delete(value);
       chip.classList.remove('is-active');
+      chip.setAttribute('aria-pressed', 'false');
     } else {
       selectedResistFilters.add(value);
       chip.classList.add('is-active');
+      chip.setAttribute('aria-pressed', 'true');
     }
+    resetBossPresetSelection();
+    renderList();
+    updateClearButtons();
+    event.preventDefault();
+  });
+
+  jobFilterSelect?.addEventListener('change', () => {
     renderList();
     updateClearButtons();
   });
 
-  jobFilterSelect?.addEventListener('change', () => {
+  bossPresetSelect?.addEventListener('change', () => {
+    applyBossPreset(bossPresetSelect.value);
+  });
+
+  resistThresholdSelect?.addEventListener('change', () => {
     renderList();
     updateClearButtons();
   });
@@ -268,6 +325,16 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!targetId) return;
     formResistances = formResistances.filter((entry) => entry.id !== targetId);
     renderResistanceEntries();
+    updateClearButtons();
+  });
+
+  statEntriesContainer?.addEventListener('click', (event) => {
+    const removeBtn = event.target.closest('[data-remove-stat]');
+    if (!removeBtn) return;
+    const targetId = removeBtn.dataset.removeStat;
+    if (!targetId) return;
+    formStats = formStats.filter((entry) => entry.id !== targetId);
+    renderStatEntries();
     updateClearButtons();
   });
 
@@ -399,6 +466,9 @@ document.addEventListener('DOMContentLoaded', () => {
       chip.className = 'gear-resist-summary__chip';
       if (Number.isFinite(data.total) && data.total > 0) {
         const capped = Math.min(data.total, 100);
+        if (capped >= 100) {
+          chip.dataset.maxed = 'true';
+        }
         chip.textContent = `${label} ${capped}%`;
       } else if (data.hasUnknown) {
         chip.textContent = label;
@@ -424,6 +494,112 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
     return totals;
+  }
+
+  function handleStatChange() {
+    const useCustom = statSelect?.value === STAT_CUSTOM_VALUE;
+    if (statCustomWrapper) statCustomWrapper.hidden = !useCustom;
+    if (statCustomInput) {
+      statCustomInput.required = useCustom;
+      if (!useCustom) {
+        statCustomInput.value = '';
+      }
+    }
+  }
+
+  function handleAddStat() {
+    const label = getStatLabel();
+    if (!label) {
+      statSelect?.focus();
+      return;
+    }
+    const rawValue = Number(statValueInput?.value);
+    const normalizedValue = Number.isFinite(rawValue) ? rawValue : null;
+    formStats = [
+      ...formStats,
+      { id: createId(), label, value: normalizedValue }
+    ];
+    if (statValueInput) {
+      statValueInput.value = '';
+    }
+    renderStatEntries();
+    updateClearButtons();
+  }
+
+  function getStatLabel() {
+    if (!statSelect) return '';
+    const selected = statSelect.value;
+    if (!selected) return '';
+    if (selected === STAT_CUSTOM_VALUE) {
+      return statCustomInput?.value.trim() || '';
+    }
+    return selected;
+  }
+
+  function setFormStats(values = []) {
+    formStats = normalizeStatEntries(values, { withId: true });
+    renderStatEntries();
+    updateClearButtons();
+  }
+
+  function serializeStats() {
+    return formStats.map((entry) => ({
+      label: entry.label,
+      value: Number.isFinite(entry.value) ? entry.value : null
+    }));
+  }
+
+  function renderStatEntries() {
+    if (!statEntriesContainer) return;
+    statEntriesContainer.innerHTML = '';
+    if (formStats.length === 0) {
+      const empty = document.createElement('p');
+      empty.className = 'gear-resist-empty';
+      empty.textContent = 'まだ登録がありません。';
+      statEntriesContainer.append(empty);
+      return;
+    }
+    const frag = document.createDocumentFragment();
+    formStats.forEach((entry) => {
+      const row = document.createElement('div');
+      row.className = 'gear-stat-entry';
+      const label = document.createElement('span');
+      label.className = 'gear-stat-entry__label';
+      label.textContent = entry.label;
+      const value = document.createElement('span');
+      value.className = 'gear-stat-entry__value';
+      value.textContent = Number.isFinite(entry.value) ? `${entry.value}` : '-';
+      const removeBtn = document.createElement('button');
+      removeBtn.type = 'button';
+      removeBtn.className = 'gear-stat-entry__remove';
+      removeBtn.dataset.removeStat = entry.id;
+      removeBtn.textContent = '削除';
+      row.append(label, value, removeBtn);
+      frag.append(row);
+    });
+    statEntriesContainer.append(frag);
+  }
+
+  function normalizeStatEntries(entries = [], { withId = false } = {}) {
+    if (!Array.isArray(entries)) return [];
+    return entries
+      .map((item) => {
+        if (!item) return null;
+        if (typeof item === 'string') {
+          const base = { label: item, value: null };
+          return withId ? { ...base, id: createId() } : base;
+        }
+        if (typeof item === 'object') {
+          const label = (item.label || '').trim();
+          if (!label) return null;
+          const numeric = Number(item.value);
+          const normalizedValue = Number.isFinite(numeric) ? numeric : null;
+          const base = { label, value: normalizedValue };
+          return withId ? { ...base, id: item.id || createId() } : base;
+        }
+        return null;
+      })
+      .filter(Boolean);
   }
 
   function normalizeResistanceEntries(resistances = [], { withId = false } = {}) {
@@ -480,8 +656,12 @@ document.addEventListener('DOMContentLoaded', () => {
       header.className = 'gear-card__header';
 
       const titleWrap = document.createElement('div');
+      titleWrap.className = 'gear-card__header-title';
       const title = document.createElement('h3');
       title.textContent = entry.name;
+      if (title.textContent.length >= 14) {
+        title.classList.add('long');
+      }
       const slot = document.createElement('p');
       slot.className = 'gear-card__meta';
       slot.textContent = entry.slot || '部位メモなし';
@@ -499,26 +679,76 @@ document.addEventListener('DOMContentLoaded', () => {
       const resistWrap = document.createElement('div');
       resistWrap.className = 'gear-card__resists';
       const normalizedResists = normalizeResistanceEntries(entry.resistances || []);
-      const aggregates = aggregateResistanceTotals(normalizedResists);
-      if (aggregates.size > 0) {
-        aggregates.forEach((data, label) => {
-          const chip = document.createElement('span');
-          chip.className = 'resistance-chip';
-          if (Number.isFinite(data.total) && data.total > 0) {
-            const capped = Math.min(data.total, 100);
-            chip.textContent = `${label} ${capped}%`;
-          } else if (data.hasUnknown) {
-            chip.textContent = label;
-          } else {
-            chip.textContent = `${label} 0%`;
+      if (normalizedResists.length > 0) {
+        const rawList = document.createElement('div');
+        rawList.className = 'gear-card__resists-list';
+        normalizedResists.forEach((resist) => {
+          const chip = document.createElement('div');
+          chip.className = 'resistance-chip resistance-chip--raw';
+          const labelEl = document.createElement('span');
+          labelEl.textContent = resist.label;
+          chip.append(labelEl);
+          if (Number.isFinite(resist.value)) {
+            const valueEl = document.createElement('span');
+            valueEl.className = 'resistance-chip__value';
+            valueEl.textContent = `${resist.value}%`;
+            chip.append(valueEl);
           }
-          resistWrap.append(chip);
+          rawList.append(chip);
         });
+        resistWrap.append(rawList);
+
+        const aggregates = aggregateResistanceTotals(normalizedResists);
+        if (aggregates.size > 0) {
+          const summaryBlock = document.createElement('div');
+          summaryBlock.className = 'gear-card__resists-summary';
+          const summaryLabel = document.createElement('p');
+          summaryLabel.className = 'gear-card__resists-note';
+          summaryLabel.textContent = '合計（最大100%まで反映）';
+          summaryBlock.append(summaryLabel);
+          const summaryChips = document.createElement('div');
+          summaryChips.className = 'gear-card__resists-total';
+          aggregates.forEach((data, label) => {
+            const chip = document.createElement('span');
+            chip.className = 'gear-card__resists-total-chip';
+            if (Number.isFinite(data.total) && data.total > 0) {
+              const capped = Math.min(data.total, 100);
+              chip.textContent = `${label} ${capped}%`;
+            } else if (data.hasUnknown) {
+              chip.textContent = label;
+            } else {
+              chip.textContent = `${label} 0%`;
+            }
+            summaryChips.append(chip);
+          });
+          summaryBlock.append(summaryChips);
+          resistWrap.append(summaryBlock);
+        }
       } else {
         const placeholder = document.createElement('span');
         placeholder.className = 'gear-card__placeholder';
         placeholder.textContent = '耐性登録なし';
         resistWrap.append(placeholder);
+      }
+
+      const statsList = normalizeStatEntries(entry.stats || []);
+      let statsBlock = null;
+      if (statsList.length > 0) {
+        statsBlock = document.createElement('div');
+        statsBlock.className = 'gear-card__stats';
+        statsList.forEach((stat) => {
+          const row = document.createElement('div');
+          row.className = 'gear-card__stat-chip';
+          const label = document.createElement('span');
+          label.textContent = stat.label;
+          row.append(label);
+          if (Number.isFinite(stat.value)) {
+            const value = document.createElement('span');
+            value.textContent = stat.value > 0 ? `+${stat.value}` : `${stat.value}`;
+            row.append(value);
+          }
+          statsBlock.append(row);
+        });
       }
 
       const note = document.createElement('p');
@@ -551,7 +781,11 @@ document.addEventListener('DOMContentLoaded', () => {
       deleteBtn.textContent = '削除';
       actions.append(loadoutToggle, editBtn, deleteBtn);
 
-      card.append(header, resistWrap, note, actions);
+      card.append(header, resistWrap);
+      if (statsBlock) {
+        card.append(statsBlock);
+      }
+      card.append(note, actions);
       frag.append(card);
     });
     listEl.append(frag);
@@ -595,6 +829,9 @@ document.addEventListener('DOMContentLoaded', () => {
       chip.className = 'gear-resist-summary__chip';
       if (Number.isFinite(data.total) && data.total > 0) {
         const capped = Math.min(data.total, 100);
+        if (capped >= 100) {
+          chip.dataset.maxed = 'true';
+        }
         chip.textContent = `${label} ${capped}%`;
       } else if (data.hasUnknown) {
         chip.textContent = label;
@@ -781,12 +1018,20 @@ document.addEventListener('DOMContentLoaded', () => {
       }
       return resist.label;
     });
+    const statText = normalizeStatEntries(entry.stats || []).map((stat) => {
+      if (!stat.label) return '';
+      if (Number.isFinite(Number(stat.value))) {
+        return `${stat.label} ${stat.value}`;
+      }
+      return stat.label;
+    });
     const haystack = [
       entry.name,
       entry.slot,
       entry.note,
       ...jobs,
-      ...resistanceText
+      ...resistanceText,
+      ...statText
     ]
       .join(' ')
       .toLowerCase();
@@ -808,6 +1053,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     setJobValue('');
     setFormResistances([]);
+    setFormStats([]);
+    if (statSelect) {
+      statSelect.value = '';
+    }
+    handleStatChange();
     editingId = null;
     formTitle.textContent = '耐性装備を登録';
     submitBtn.textContent = '保存する';
@@ -826,6 +1076,8 @@ document.addEventListener('DOMContentLoaded', () => {
     setSelectedJobs(target.jobs || []);
     noteInput.value = target.note || '';
     setFormResistances(target.resistances || []);
+    setFormStats(target.stats || []);
+    handleStatChange();
     window.scrollTo({ top: 0, behavior: 'smooth' });
     nameInput.focus();
     updateClearButtons();
@@ -847,6 +1099,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function updateClearButtons() {
     clearResistsBtn.disabled = formResistances.length === 0;
+    if (clearStatsBtn) {
+      clearStatsBtn.disabled = formStats.length === 0;
+    }
     const hasSearch = Boolean(searchInput.value.trim());
     const hasFilters = hasActiveFilters();
     clearSearchBtn.disabled = !hasSearch && !hasFilters;
@@ -860,6 +1115,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (getJobValue()) return true;
     if (noteInput.value.trim()) return true;
     if (formResistances.length > 0) return true;
+    if (formStats.length > 0) return true;
     return false;
   }
 
@@ -1004,11 +1260,133 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  async function loadBossPresets() {
+    if (!bossPresetSelect) return;
+    const inlineData = getInlineBossPresets();
+    if (window.location.protocol === 'file:' && inlineData) {
+      bossPresets = inlineData;
+      rebuildBossPresetMap();
+      buildBossPresetSelect();
+      return;
+    }
+    try {
+      const response = await fetch(BOSS_PRESETS_URL, { cache: 'no-cache' });
+      if (!response.ok) {
+        throw new Error(`HTTP ${response.status}`);
+      }
+      const data = await response.json();
+      bossPresets = Array.isArray(data) ? data : [];
+    } catch (error) {
+      console.error('ボス耐性プリセットの読み込みに失敗しました', error);
+      bossPresets = inlineData || [];
+    } finally {
+      rebuildBossPresetMap();
+      buildBossPresetSelect();
+    }
+  }
+
+  function rebuildBossPresetMap() {
+    bossPresetMap = new Map();
+    bossPresets.forEach((preset) => {
+      if (!preset || !preset.name) return;
+      bossPresetMap.set(preset.name, preset);
+    });
+  }
+
+  function buildBossPresetSelect() {
+    if (!bossPresetSelect) return;
+    bossPresetSelect.innerHTML = '';
+    const placeholder = document.createElement('option');
+    placeholder.value = '';
+    placeholder.textContent = bossPresets.length > 0 ? 'ボスを選択' : '耐性データなし';
+    bossPresetSelect.append(placeholder);
+    if (bossPresets.length === 0) {
+      return;
+    }
+    const grouped = new Map();
+    bossPresets.forEach((preset) => {
+      if (!preset || !preset.name || !Array.isArray(preset.resistances) || preset.resistances.length === 0) {
+        return;
+      }
+      const key = preset.category || 'other';
+      if (!grouped.has(key)) {
+        grouped.set(key, {
+          label: preset.categoryLabel || key,
+          items: []
+        });
+      }
+      grouped.get(key).items.push(preset);
+    });
+    const sortedGroups = Array.from(grouped.values()).sort((a, b) =>
+      a.label.localeCompare(b.label, 'ja')
+    );
+    sortedGroups.forEach((group) => {
+      group.items.sort((a, b) => a.name.localeCompare(b.name, 'ja'));
+      const optgroup = document.createElement('optgroup');
+      optgroup.label = group.label;
+      group.items.forEach((preset) => {
+        const option = document.createElement('option');
+        option.value = preset.name;
+        option.textContent = preset.name;
+        optgroup.append(option);
+      });
+      bossPresetSelect.append(optgroup);
+    });
+  }
+
   function getInlineCatalogData() {
     if (Array.isArray(window.__GEAR_CATALOG__)) {
       return window.__GEAR_CATALOG__;
     }
     return null;
+  }
+
+  function getInlineBossPresets() {
+    if (Array.isArray(window.__BOSS_PRESETS__)) {
+      return window.__BOSS_PRESETS__;
+    }
+    return null;
+  }
+
+  function applyBossPreset(name) {
+    if (!name) {
+      setResistFilters([]);
+      renderList();
+      updateClearButtons();
+      return;
+    }
+    const preset = bossPresetMap.get(name);
+    if (!preset) return;
+    activeBossPreset = preset;
+    const mustResists = preset.resistances
+      .filter((resist) => resist.priority === 'must')
+      .map((resist) => resist.label);
+    const targets =
+      mustResists.length > 0
+        ? mustResists
+        : preset.resistances.map((resist) => resist.label).filter(Boolean);
+    setResistFilters(targets);
+    updateBossPresetSummary(preset, targets);
+    renderList();
+    updateClearButtons();
+  }
+
+  function resetBossPresetSelection() {
+    activeBossPreset = null;
+    if (bossPresetSelect) {
+      bossPresetSelect.value = '';
+    }
+    updateBossPresetSummary();
+  }
+
+  function updateBossPresetSummary(preset = null, applied = []) {
+    if (!bossPresetSummary) return;
+    if (!preset) {
+      bossPresetSummary.textContent = '選択すると必須耐性で一括フィルターされます。';
+      return;
+    }
+    const text = applied.length > 0 ? applied.join(' / ') : '耐性情報なし';
+    bossPresetSummary.textContent = `${preset.name}: ${text}`;
   }
 
   function updateCatalogControls() {
@@ -1044,6 +1422,7 @@ document.addEventListener('DOMContentLoaded', () => {
         button.className = 'gear-filter-chip';
         button.dataset.resistFilter = label;
         button.textContent = label;
+        button.setAttribute('aria-pressed', 'false');
         chipWrap.append(button);
       });
       groupWrapper.append(groupLabel, chipWrap);
@@ -1071,12 +1450,39 @@ document.addEventListener('DOMContentLoaded', () => {
     return Array.from(selectedResistFilters);
   }
 
-  function clearResistFilter() {
+  function getResistThreshold() {
+    if (!resistThresholdSelect) return 0;
+    const value = Number(resistThresholdSelect.value);
+    return Number.isFinite(value) ? value : 0;
+  }
+
+  function setResistFilters(values = []) {
     selectedResistFilters.clear();
+    values.forEach((value) => {
+      if (value) {
+        selectedResistFilters.add(value);
+      }
+    });
     if (resistFilterContainer) {
       resistFilterContainer.querySelectorAll('[data-resist-filter]').forEach((chip) => {
-        chip.classList.remove('is-active');
+        const label = chip.dataset.resistFilter;
+        const isActive = selectedResistFilters.has(label);
+        chip.classList.toggle('is-active', isActive);
+        chip.setAttribute('aria-pressed', isActive ? 'true' : 'false');
       });
+    }
+    if (!values.length) {
+      resetBossPresetSelection();
+    }
+  }
+
+  function clearResistFilter() {
+    setResistFilters([]);
+  }
+
+  function resetResistThreshold() {
+    if (resistThresholdSelect) {
+      resistThresholdSelect.value = '0';
     }
   }
 
@@ -1090,16 +1496,24 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function hasActiveFilters() {
-    return getResistFilterValues().length > 0 || Boolean(getJobFilterValue());
+    const resistCount = getResistFilterValues().length;
+    const thresholdActive = getResistThreshold() > 0 && resistCount > 0;
+    return resistCount > 0 || Boolean(getJobFilterValue()) || thresholdActive;
   }
 
   function matchesResistFilter(entry) {
     const targets = getResistFilterValues();
     if (!targets.length) return true;
-    const entryResists = new Set(
-      normalizeResistanceEntries(entry.resistances || []).map((resist) => resist.label)
-    );
-    return targets.every((target) => entryResists.has(target));
+    const threshold = getResistThreshold();
+    const aggregates = aggregateResistanceTotals(normalizeResistanceEntries(entry.resistances || []));
+    return targets.every((target) => {
+      const data = aggregates.get(target);
+      if (!data) return false;
+      if (threshold <= 0) return true;
+      if (!Number.isFinite(data.total)) return false;
+      const capped = Math.min(data.total, 100);
+      return capped >= threshold;
+    });
   }
 
   function matchesJobFilter(entry) {
