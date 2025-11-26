@@ -1854,46 +1854,54 @@ h1 {
 /* スマートフォン向け最適化 */
 @media (max-width: 480px) {
   body {
-    font-size: 13px;
+    font-size: 12px;
   }
 
   h1 {
-    font-size: clamp(1.3rem, 6vw, 1.6rem) !important;
+    font-size: clamp(1.1rem, 5.5vw, 1.4rem) !important;
   }
 
   .hero {
-    padding: 1.5rem 0.85rem;
+    padding: 1.2rem 0.7rem;
   }
 
   .hero__topline {
-    gap: 0.4rem;
+    gap: 0.3rem;
   }
 
   .hero__tag,
   .hero__badge {
-    font-size: 0.65rem;
-    padding: 0.3rem 0.6rem;
+    font-size: 0.6rem;
+    padding: 0.25rem 0.5rem;
   }
 
   .hero__lead {
-    font-size: 0.8rem;
-    line-height: 1.6;
+    font-size: 0.72rem;
+    line-height: 1.55;
   }
 
   .hero__meta {
-    gap: 0.5rem;
-    font-size: 0.7rem;
+    gap: 0.4rem;
+    font-size: 0.65rem;
   }
 
   .hero__stats {
     width: 100%;
-    gap: 0.5rem;
+    gap: 0.4rem;
   }
 
   .hero__stats li {
     flex: 1;
     min-width: 0;
-    padding: 0.7rem 0.6rem;
+    padding: 0.6rem 0.5rem;
+  }
+
+  .hero__stats-value {
+    font-size: 1.3rem;
+  }
+
+  .hero__stats-label {
+    font-size: 0.68rem;
   }
 
   /* スマホ用ナビゲーション */
@@ -1904,7 +1912,7 @@ h1 {
     left: 0;
     right: 0;
     border-radius: 0;
-    padding: 0.5rem 0.6rem;
+    padding: 0.45rem 0.55rem;
     background: var(--bg-card);
     box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(12px);
@@ -1920,67 +1928,83 @@ h1 {
   }
 
   .page-switch__link {
-    padding: 0.6rem 0.7rem;
-    font-size: 0.65rem;
-    min-height: 44px;
+    padding: 0.55rem 0.6rem;
+    font-size: 0.6rem;
+    min-height: 42px;
   }
 
   /* レイアウト */
   .layout {
-    margin: 0.75rem auto 4rem;
-    padding: 0 0.75rem;
-    gap: 1.2rem;
+    margin: 0.6rem auto 3.8rem;
+    padding: 0 0.6rem;
+    gap: 1rem;
   }
 
   .panel {
     padding: 0;
-    gap: 1.2rem;
+    gap: 1rem;
     position: static;
     max-height: none;
   }
 
+  .panel__title {
+    font-size: 0.85rem;
+  }
+
+  .panel__hint {
+    font-size: 0.7rem;
+  }
+
   .content {
     padding: 0;
-    gap: 1.2rem;
+    gap: 1rem;
+  }
+
+  .content__header h2 {
+    font-size: 1.2rem;
+  }
+
+  .content__subtitle {
+    font-size: 0.75rem;
   }
 
   /* フィルター */
   .filter-groups-nav__btn {
-    padding: 0.5rem 0.7rem;
-    font-size: 0.68rem;
-    min-height: 40px;
+    padding: 0.45rem 0.6rem;
+    font-size: 0.63rem;
+    min-height: 38px;
   }
 
   .filter-group-panels {
-    padding: 0.8rem;
+    padding: 0.7rem;
   }
 
   .filter-chip {
-    padding: 0.5rem 0.7rem;
-    font-size: 0.7rem;
-    min-height: 40px;
+    padding: 0.45rem 0.6rem;
+    font-size: 0.65rem;
+    min-height: 38px;
   }
 
   .panel__clear {
-    padding: 0.65rem;
-    font-size: 0.75rem;
-    min-height: 44px;
+    padding: 0.6rem;
+    font-size: 0.7rem;
+    min-height: 42px;
   }
 
   /* 検索 */
   .search {
-    padding: 0.6rem 0.85rem;
+    padding: 0.5rem 0.7rem;
     min-width: 100%;
   }
 
   .search input {
-    font-size: 0.8rem;
-    padding: 0.35rem;
+    font-size: 0.75rem;
+    padding: 0.3rem;
   }
 
   .toolbar {
     flex-direction: column;
-    gap: 0.7rem;
+    gap: 0.6rem;
     align-items: stretch;
   }
 
@@ -1990,20 +2014,20 @@ h1 {
   }
 
   .legend__item {
-    padding: 0.4rem 0.7rem;
-    font-size: 0.65rem;
+    padding: 0.35rem 0.6rem;
+    font-size: 0.6rem;
   }
 
   /* カード */
   .cards {
     grid-template-columns: repeat(2, 1fr);
-    gap: 0.75rem;
+    gap: 0.6rem;
   }
 
   .card {
-    padding: 0.85rem;
-    gap: 0.75rem;
-    border-radius: 10px;
+    padding: 0.7rem;
+    gap: 0.6rem;
+    border-radius: 8px;
   }
 
   .card:hover {
@@ -2011,56 +2035,72 @@ h1 {
   }
 
   .card__title {
-    font-size: 0.95rem;
+    font-size: 0.85rem;
     line-height: 1.3;
   }
 
   .card__meta {
-    gap: 0.3rem;
+    gap: 0.25rem;
   }
 
   .meta-chip {
-    padding: 0.3rem 0.5rem;
-    font-size: 0.6rem;
+    padding: 0.25rem 0.45rem;
+    font-size: 0.55rem;
   }
 
   .card__summary {
-    font-size: 0.75rem;
+    font-size: 0.68rem;
     line-height: 1.5;
   }
 
+  .card__jobs-title {
+    font-size: 0.7rem;
+  }
+
+  .card__jobs-list {
+    font-size: 0.72rem;
+  }
+
+  .card__loot-title {
+    font-size: 0.7rem;
+  }
+
   .loot-item {
-    padding: 0.65rem;
+    padding: 0.55rem;
   }
 
   .loot-item__name {
-    font-size: 0.75rem;
+    font-size: 0.68rem;
   }
 
   .loot-item__alchemy {
-    font-size: 0.7rem;
+    font-size: 0.65rem;
+  }
+
+  .resistance-group__title {
+    font-size: 0.65rem;
   }
 
   .resistance-chip {
-    padding: 0.4rem 0.6rem;
-    font-size: 0.7rem;
+    padding: 0.35rem 0.5rem;
+    font-size: 0.65rem;
   }
 
   .card__notes {
-    font-size: 0.7rem;
+    font-size: 0.65rem;
     line-height: 1.5;
   }
 
   .card__link {
-    font-size: 0.68rem;
-    padding: 0.45rem 0.65rem;
-    min-height: 40px;
+    font-size: 0.63rem;
+    padding: 0.4rem 0.55rem;
+    min-height: 38px;
   }
 
   .footer {
-    margin-bottom: 4rem;
-    padding: 0 0.75rem;
-    font-size: 0.7rem;
+    margin-bottom: 3.8rem;
+    padding: 0 0.6rem;
+    font-size: 0.65rem;
   }
 }
 
