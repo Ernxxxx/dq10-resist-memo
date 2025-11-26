@@ -1893,6 +1893,50 @@ h1 {
   color: rgba(223, 232, 255, 0.9);
 }
 
+@media (max-width: 960px) {
+  .layout--gear {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  .gear-form__grid {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+  }
+
+  .gear-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .gear-toolbar__filters {
+    width: 100%;
+    gap: 0.5rem;
+  }
+
+  .gear-filter {
+    min-width: 100%;
+  }
+
+  .gear-filter-chips {
+    justify-content: flex-start;
+  }
+
+  .gear-tabs {
+    overflow-x: auto;
+    padding-bottom: 0.3rem;
+  }
+
+  .gear-cards {
+    justify-content: center;
+  }
+
+  .gear-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
 .gear-card__resists-summary {
   display: grid;
   gap: 0.25rem;
