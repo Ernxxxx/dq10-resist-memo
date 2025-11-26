@@ -2263,6 +2263,7 @@ const buildResistanceFilters = () => {
       chip.className = 'filter-chip';
       chip.textContent = labelText;
       chip.dataset.label = labelText;
+      chip.dataset.active = state.resistances.has(labelText) ? 'true' : 'false';
       chip.title = resistanceMeta[labelText]?.description ?? labelText;
       chipsWrap.appendChild(chip);
     });
